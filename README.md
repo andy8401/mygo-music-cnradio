@@ -4,7 +4,7 @@
 
 > **仓库**：https://github.com/andy8401/mygo-music-cnradio
 > **一键安装**（桌面端点开会唤起 MyGo Music）：`mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio`
-> 想被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录，需要给仓库加 topic `mygo-music-plugin`。
+> 仓库已带 topic `mygo-music-plugin`，可被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录。
 
 ---
 
@@ -125,7 +125,7 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 1. **准备运行时**：安装 Python 3（命令为 `python3` / `python` / `py` 之一）**或** ffmpeg，且可在 PATH 中调用。macOS/Linux 通常自带 Python 3；Windows 装官方 Python 即可。
 2. **导入插件**（任选其一）：
    - **GitHub（推荐）**：设置 → 插件 → + → 从 GitHub 安装，填 `andy8401/mygo-music-cnradio`；或点 [一键安装](mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio)。
-   - **本地**：选择本文件夹，或下载仓库 Release / 本地打包的 `mygo-music-cnradio.zip` 导入。
+   - **本地**：选择本文件夹，或用 `mygo-music-cnradio.zip`（zip 根目录即 `plugin.json`）导入。
 3. **授权**：首次安装会列出权限，需要允许
    - `network`：`*.radio.cn`、`127.0.0.1`、`localhost`
    - `process`：`python3` / `python` / `py` / `ffmpeg`（用于启动本地转流桥）
@@ -173,5 +173,5 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 
 - 仓库：`https://github.com/andy8401/mygo-music-cnradio`，`plugin.json` 位于仓库根目录，MyGo Music 可直接安装。
 - 没有 Release 时，客户端取默认分支最新一次提交；打 tag 或推送新提交即视为新版本（新增权限会再次询问用户）。
-- 官方插件目录按 GitHub topic `mygo-music-plugin` 收录：在仓库页面右侧 About 的齿轮里添加该 topic 即可。
+- 仓库已设置 topic `mygo-music-plugin`（另有 `mygo-music` / `radio` / `internet-radio` / `cnradio`），可被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录。
 - 插件版本号写在 `plugin.json` 的 `version`，当前 `1.0.0`。
