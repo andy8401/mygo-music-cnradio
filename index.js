@@ -64,27 +64,66 @@ async function api(path, params) {
 
 // -------------------------------------------------------------------- catalog
 // The web page only shows 19 national stations by default. Walking every
-// province code yields the full directory (913 unique stations at last check).
+// province code yields the full directory (930+ unique stations at last check).
+//
+// The API rate-limits bursts: firing 32 provinces + 10 categories at once made
+// it answer 503 for part of them. A failed province used to be cached as an
+// empty list for 30 minutes, which is exactly how a region "loses" channels.
+// Now: small batches, retries with backoff, fall back to the last complete
+// directory for a failed region, and never cache a partial build for long.
 
-async function buildCatalog() {
-  const [provRes, catRes] = await Promise.all([api(API.provinces), api(API.categories)]);
+const CATALOG_BATCH = 3;
+const CATALOG_GAP_MS = 180;
+const RETRY_TIMES = 2;
+const PARTIAL_TTL = 60 * 1000;
+
+async function apiRetry(path, params) {
+  let last;
+  for (let i = 0; i <= RETRY_TIMES; i++) {
+    try {
+      return await api(path, params);
+    } catch (err) {
+      last = err;
+      if (i < RETRY_TIMES) await sleep(300 * (i + 1) * (i + 1)); // 300ms, 1200ms
+    }
+  }
+  throw last;
+}
+
+async function mapBatched(items, worker) {
+  const out = [];
+  for (let i = 0; i < items.length; i += CATALOG_BATCH) {
+    const batch = items.slice(i, i + CATALOG_BATCH);
+    const part = await Promise.all(batch.map(worker));
+    for (let j = 0; j < part.length; j++) out.push(part[j]);
+    if (i + CATALOG_BATCH < items.length) await sleep(CATALOG_GAP_MS);
+  }
+  return out;
+}
+
+async function buildCatalog(previous) {
+  const [provRes, catRes] = await Promise.all([
+    apiRetry(API.provinces),
+    apiRetry(API.categories),
+  ]);
   const provinces = provRes.data || [];
   const categories = catRes.data || [];
   const byId = {};
   const regionIds = { "0": [] };
   const catIds = {};
+  const failures = [];
 
-  const regionJobs = provinces.map(async (p) => {
+  const regions = await mapBatched(provinces, async (p) => {
     const code = String(p.provinceCode);
     try {
-      const res = await api(API.stations, { categoryId: "0", provinceCode: code });
-      return { code: code, name: p.provinceName, list: res.data || [] };
+      const res = await apiRetry(API.stations, { categoryId: "0", provinceCode: code });
+      return { code: code, name: p.provinceName, list: res.data || [], ok: true };
     } catch (err) {
-      console.log("cnradio: province " + code + " " + err.message);
-      return { code: code, name: p.provinceName, list: [] };
+      failures.push(code);
+      console.log("cnradio: province " + code + " failed: " + err.message);
+      return { code: code, name: p.provinceName, list: [], ok: false };
     }
   });
-  const regions = await Promise.all(regionJobs);
   regions.forEach((r) => {
     regionIds[r.code] = [];
     r.list.forEach((item) => {
@@ -103,17 +142,30 @@ async function buildCatalog() {
     });
   });
 
-  const catJobs = categories.map(async (c) => {
+  // A region that failed this round is filled from the last good catalogue,
+  // so a transient 503 never silently empties a whole province.
+  if (previous && previous.byId && previous.regionIds) {
+    failures.forEach((code) => {
+      const ids = previous.regionIds[code] || [];
+      if (!regionIds[code]) regionIds[code] = [];
+      ids.forEach((id) => {
+        if (!byId[id] && previous.byId[id]) byId[id] = previous.byId[id];
+        if (regionIds[code].indexOf(id) < 0) regionIds[code].push(id);
+      });
+    });
+  }
+
+  const cats = await mapBatched(categories, async (c) => {
     const id = String(c.id);
     try {
-      const res = await api(API.stations, { categoryId: id, provinceCode: "0" });
-      return { id: id, name: c.categoryName, list: res.data || [] };
+      const res = await apiRetry(API.stations, { categoryId: id, provinceCode: "0" });
+      return { id: id, name: c.categoryName, list: res.data || [], ok: true };
     } catch (err) {
-      console.log("cnradio: category " + id + " " + err.message);
-      return { id: id, name: c.categoryName, list: [] };
+      failures.push("cat:" + id);
+      console.log("cnradio: category " + id + " failed: " + err.message);
+      return { id: id, name: c.categoryName, list: [], ok: false };
     }
   });
-  const cats = await Promise.all(catJobs);
   cats.forEach((c) => {
     catIds[c.id] = [];
     c.list.forEach((item) => {
@@ -135,7 +187,7 @@ async function buildCatalog() {
     });
   });
 
-  const catalog = {
+  return {
     at: Date.now(),
     provinces: provinces,
     categories: categories,
@@ -143,18 +195,30 @@ async function buildCatalog() {
     byId: byId,
     regionIds: regionIds,
     catIds: catIds,
+    partial: failures.length > 0,
+    failures: failures,
   };
-  host.storage.set("catalog", catalog);
-  return catalog;
 }
 
-async function catalog() {
+async function catalog(force) {
   const saved = host.storage.get("catalog");
-  if (saved && saved.at && Date.now() - saved.at < CATALOG_TTL &&
-      saved.stations && saved.stations.length > 20) {
-    return saved;
+  if (!force && saved && saved.at && saved.stations && saved.stations.length > 20) {
+    const ttl = saved.partial ? PARTIAL_TTL : CATALOG_TTL;
+    if (Date.now() - saved.at < ttl) return saved;
   }
-  return buildCatalog();
+  const built = await buildCatalog(saved);
+  if (!built.partial) {
+    host.storage.set("catalog", built);
+    return built;
+  }
+  // Keep the last complete directory instead of caching a hole, but report
+  // which regions failed so a manual refresh is honest about it.
+  if (saved && !saved.partial && saved.stations &&
+      saved.stations.length >= built.stations.length) {
+    return Object.assign({}, saved, { refreshFailures: built.failures });
+  }
+  host.storage.set("catalog", built); // partial, only trusted for PARTIAL_TTL
+  return built;
 }
 
 function idsOf(c, ids, limit) {
@@ -302,18 +366,41 @@ async function replayPage(c, broadcastId) {
 }
 
 export async function browse({ page }) {
-  const c = await catalog();
   const p = String(page || "");
+  // A visible way to rebuild the directory after a rate-limited or stale load.
+  if (p === "refresh") {
+    const fresh = await catalog(true);
+    const failed = fresh.refreshFailures || fresh.failures || [];
+    return {
+      title: t("Refresh catalogue"),
+      subtitle: fresh.stations.length + t(" stations") +
+        (failed.length ? " · " + t("Some regions failed, kept the last complete directory") +
+          " [" + failed.join(", ") + "]" : ""),
+      sections: [{
+        title: t("By region"),
+        links: [{ title: t("Refresh catalogue"), subtitle: t("Rebuild the station directory"), page: "refresh" }].concat(
+          fresh.provinces.map((x) => ({
+            title: x.provinceName,
+            subtitle: (fresh.regionIds[String(x.provinceCode)] || []).length + t(" stations"),
+            page: "region:" + x.provinceCode,
+          }))
+        ),
+      }],
+    };
+  }
+  const c = await catalog();
   if (p === "regions") {
     return {
       title: t("By region"),
       sections: [{
         title: t("By region"),
-        links: c.provinces.map((x) => ({
-          title: x.provinceName,
-          subtitle: (c.regionIds[String(x.provinceCode)] || []).length + t(" stations"),
-          page: "region:" + x.provinceCode,
-        })),
+        links: [{ title: t("Refresh catalogue"), subtitle: t("Rebuild the station directory"), page: "refresh" }].concat(
+          c.provinces.map((x) => ({
+            title: x.provinceName,
+            subtitle: (c.regionIds[String(x.provinceCode)] || []).length + t(" stations"),
+            page: "region:" + x.provinceCode,
+          }))
+        ),
       }],
     };
   }
@@ -344,10 +431,27 @@ export async function browse({ page }) {
     const label = isRegion
       ? (c.provinces.filter((x) => String(x.provinceCode) === key)[0] || {}).provinceName
       : (c.categories.filter((x) => String(x.id) === key)[0] || {}).categoryName;
+    const local = idsOf(c, ids);
+    const sections = [{
+      title: (label || p) + " · " + t("Local stations"),
+      stations: local.map(toStation),
+    }];
+    // National stations are receivable in every region. Listing them here
+    // keeps a region page from looking "incomplete" compared with the radio.
+    if (isRegion && key !== "0") {
+      const national = idsOf(c, c.regionIds["0"], 19);
+      if (national.length) {
+        sections.push({
+          title: t("National stations (available everywhere)"),
+          stations: national.map(toStation),
+        });
+      }
+    }
     return {
       title: label || p,
-      subtitle: (ids || []).length + t(" stations"),
-      sections: [{ title: label || p, stations: idsOf(c, ids).map(toStation) }],
+      subtitle: local.length + t(" stations") +
+        (sections.length > 1 ? " · +" + sections[1].stations.length + " " + t("National stations") : ""),
+      sections: sections,
     };
   }
   if (p.indexOf("playback:") === 0) return replayPage(c, p.split(":")[1]);

@@ -31,5 +31,10 @@
   "Stream not found": "没有找到直播流",
   "This station has no stream": "这个电台没有可用的流地址",
   "Programme expired, open the replay page again": "节目地址已失效，请重新打开回听页面",
-  "Live streams need a bridge. Install Python 3 or ffmpeg, allow the process permission in Settings, then try again.": "直播需要转流桥：请安装 Python 3 或 ffmpeg，并在「设置 → 插件」中允许进程权限后重试。"
+  "Live streams need a bridge. Install Python 3 or ffmpeg, allow the process permission in Settings, then try again.": "直播需要转流桥：请安装 Python 3 或 ffmpeg，并在「设置 → 插件」中允许进程权限后重试。",
+  "Refresh catalogue": "刷新频道目录",
+  "Rebuild the station directory": "重新拉取全部电台",
+  "Some regions failed, kept the last complete directory": "部分地区拉取失败，已沿用上一次的完整目录",
+  "Local stations": "本地电台",
+  "National stations (available everywhere)": "全国台（各地均可收听）"
 }

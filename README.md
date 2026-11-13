@@ -1,6 +1,6 @@
 # 云听 · 央广在线收音机 — MyGo Music 插件
 
-把 [radio.cn 电台直播页](https://www.radio.cn/pc-portal/erji/radioStation.html) 的电台目录接进 [MyGo Music](https://github.com/egoist/mygo-music)：全国 **920 个电台**、按地区/类型浏览、名称与正在直播节目搜索、今日节目回听，直播在播放器中持续播放。
+把 [radio.cn 电台直播页](https://www.radio.cn/pc-portal/erji/radioStation.html) 的电台目录接进 [MyGo Music](https://github.com/egoist/mygo-music)：全国 **930+ 个电台**（实测 937，动态增减）、按地区/类型浏览、名称与正在直播节目搜索、今日节目回听，直播在播放器中持续播放。
 
 > **仓库**：https://github.com/andy8401/mygo-music-cnradio
 > **一键安装**（桌面端点开会唤起 MyGo Music）：`mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio`
@@ -74,9 +74,21 @@ sign      = UPPER( MD5( 参数按 key 升序拼成 "k=v&k=v" + "&timestamp=" + t
 | 地区 | 32 | `appProvince/list/all` |
 | 类型 | 10 | `appCategory/list/all` |
 | 页面默认电台 | 19（国家台） | `getRadioList()` 无参 |
-| <mark>**全量去重电台**</mark> | <mark>**920**</mark> | 遍历 32 个 `provinceCode` + 10 个 `categoryId` 后按 `contentId` 去重 |
+| <mark>**全量去重电台**</mark> | <mark>**937**</mark>（动态增减） | 遍历 32 个 `provinceCode` + 10 个 `categoryId` 后按 `contentId` 去重 |
 | 可回听频道 | 19 | `listenbackList` |
 | 中国之声单日节目 | 13–23（按日期变化） | `listByDate` |
+
+### 1.6 北京地区到底有多少频道
+
+| 核实方式 | 结果 |
+| --- | --- |
+| 网页「地区 → 北京」触发的 `getRadioList(0, 110000)` | **5 个**：北京城市广播副中心之声、北京交通广播、北京音乐广播、大兴人民广播电台、北京969经典调频 |
+| 10 个类别 × `provinceCode=110000` 去重 | 仍是 5 个，无新增 |
+| 全量 937 个电台中名称含「北京」 | 4 个（另 1 个「大兴人民广播电台」在北京分组内） |
+| `place_id` / `areaCode` / `pageNum` / `pageSize` / `limit` 等隐藏参数 | 均不改变结果（未知参数被忽略，回退成 19 个国家台） |
+| 无头 Edge 渲染页面 | 地区列表 32 项，确认北京 code = `110000` |
+
+**结论**：云听网页版本身对北京只收录 5 个本地直播频道，不是插件漏采。v1.1.0 起「按地区 → 北京」额外分组列出 19 个全国台（各地均可收听），页面合计 24 个。
 
 ---
 
@@ -109,9 +121,9 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 
 | 函数 | 返回 | 说明 |
 | --- | --- | --- |
-| `stations()` | `[Station]` | 920 个电台 |
+| `stations()` | `[Station]` | 930+ 个电台（实测 937，动态增减） |
 | `home()` | `Browse` | 国家台、热门、地区/类型入口、回听入口 |
-| `browse({page})` | `Browse` | `regions` / `categories` / `region:<code>` / `cat:<id>` / `replay` / `playback:<id>` / `all` |
+| `browse({page})` | `Browse` | `regions` / `categories` / `refresh` / `region:<code>` / `cat:<id>` / `replay` / `playback:<id>` / `all`；地区页额外分组列出 19 个全国台 |
 | `search({query,kind,offset})` | `{tracks, more}` | 匹配台名、正在直播节目、地区 |
 | `suggest({query})` | `[string]` | 台名前缀建议 |
 | `stationNext({id})` | `[Track]` | 每次生成唯一 track id，流断了自动续播 |
@@ -129,7 +141,7 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 3. **授权**：首次安装会列出权限，需要允许
    - `network`：`*.radio.cn`、`127.0.0.1`、`localhost`
    - `process`：`python3` / `python` / `py` / `ffmpeg`（用于启动本地转流桥）
-4. 侧栏出现「云听首页 / 全部电台 / 按地区 / 按类型 / 节目回听」，点电台即播。
+4. 侧栏出现「云听首页 / 全部电台 / 按地区 / 按类型 / 节目回听」，点电台即播。「按地区」「按类型」页顶部有「刷新频道目录」，可强制重建目录并显示拉取失败的地区码。
 
 > `process` 权限只接受**命令名**。若你的 Python 命令不在上述三个名字里，请把可执行程序以这三个名字之一放到 PATH（不要填绝对路径，绝对路径不在已声明的权限内）。
 
@@ -149,13 +161,21 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 | # | 检查 | 结果 |
 | --- | --- | --- |
 | 1 | 三个目录接口带签名 GET | 全部 `HTTP 200 / code:0` |
-| 2 | 遍历 32 地区 + 10 类型 | 去重后 **920** 个电台 |
+| 2 | 遍历 32 地区 + 10 类型 | 首轮去重后 **920** 个电台；后续复测 **937**（目录动态增减，非固定值） |
 | 3 | 回听 `m4a` 直链 | `HTTP 206`，`audio/x-m4a`，文件头 `ftypM4A` |
 | 4 | HLS playlist | `HTTP 200`，`#EXT-X-TARGETDURATION:10`，5 个 `.ts` 分片 |
 | 5 | 分片首字节 | `47 40 11 1d ...`（MPEG-TS，非 ADTS）→ 证实必须转封装 |
 | 6 | `verify_bridge.py` | `/health = cnradio-bridge-ok`；`/live.aac` 6 秒收 122880 字节，解析出 **216 个完整 ADTS 帧**，44100 Hz，`fff15080…` |
 | 7 | `node --check index.js` / `py_compile bridge.py` / 两个 JSON | 全部通过 |
-| 8 | `harness.mjs`（模拟 MyGo host，实跑 13 项导出函数） | **ALL PASS**：920 电台、5 个 home 分区、19 回听频道、13 个节目、m4a stream、搜索、stationNext、直播桥 URL、`live.aac` 输出 `fff15080459ffc21`、同电台复用桥 |
+| 8 | `harness.mjs` v1.0.0（模拟 MyGo host） | 13 项 ALL PASS，`live.aac` 输出 `fff15080459ffc21` |
+| 9 | `harness.mjs` v1.1.0（18 项，含限流回归） | **ALL PASS**：937 电台、北京页 5+19、刷新页 33 入口、瞬时 503 重试后仍 5 个、持续 503 沿用完整目录仍 5 个 |
+| 10 | 高频请求观察 | `listenbackList` 返回 `503 Service Temporarily Unavailable`，证实云端存在限流 |
+
+### 5.1 地区完整性与限流修复（v1.1.0）
+
+- **根因**：v1.0.0 首次加载用 `Promise.all` 同时发 32 个省 + 10 个类别请求；云端限流时某个地区返回 503，被 `catch` 吞成空数组，而这个「缺一截」的目录还会被缓存 30 分钟。表现就是某个地区频道数不对。
+- **修复**：每批 3 个请求、批间 180ms；失败按 300ms / 1200ms 退避重试 2 次；失败地区从上次完整目录回填；不完整目录只缓存 60 秒且不覆盖完整缓存；刷新页列出失败地区码。
+- **手动刷新**：侧栏「按地区 → 刷新频道目录」，或打开 `page: refresh`。
 
 ---
 
@@ -165,7 +185,7 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 - 直播延迟约 10–20 秒（HLS 分片 + 桥的节流），属正常现象。
 - 流地址的 `key/time` 有时效，插件每次播放都重新签名取新地址；切台会重启桥，同一电台复用桥。
 - `direct` 模式仅用于确认 HLS 与播放器的不兼容，正常收听不要用。
-- 插件只请求公开的目录/流接口，目录缓存 30 分钟；请仅作个人学习与自用，遵守站点服务条款，不要高频轮询或分发流地址。
+- 插件只请求公开的目录/流接口，**完整目录缓存 30 分钟，因限流而残缺的目录只缓存 60 秒**且在下次成功拉取前不覆盖完整缓存；请仅作个人学习与自用，遵守站点服务条款，不要高频轮询或分发流地址。
 
 ---
 
@@ -174,4 +194,11 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 - 仓库：`https://github.com/andy8401/mygo-music-cnradio`，`plugin.json` 位于仓库根目录，MyGo Music 可直接安装。
 - 没有 Release 时，客户端取默认分支最新一次提交；打 tag 或推送新提交即视为新版本（新增权限会再次询问用户）。
 - 仓库已设置 topic `mygo-music-plugin`（另有 `mygo-music` / `radio` / `internet-radio` / `cnradio`），可被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录。
-- 插件版本号写在 `plugin.json` 的 `version`，当前 `1.0.0`。
+- 插件版本号写在 `plugin.json` 的 `version`，当前 **`1.1.0`**。
+
+### 7.1 版本记录
+
+| 版本 | 内容 |
+| --- | --- |
+| `1.0.0` | 首次发布：签名接口复现、930+ 电台目录、按地区/类型浏览、搜索、节目回听、HLS→ADTS 本地转流桥。 |
+| `1.1.0` | 修复云端限流导致的**地区频道缺失**：分批请求 + 重试退避、失败地区从上次完整目录回填、残缺目录短 TTL；新增「刷新频道目录」页；地区页额外分组列出 19 个全国台（如北京页由 5 个变 5+19=24 个）。 |
