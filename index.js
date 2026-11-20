@@ -398,13 +398,44 @@ async function buildCatalog(previous) {
   };
 }
 
-async function catalog(force) {
-  const saved = host.storage.get("catalog");
-  if (!force && saved && saved.at && saved.stations && saved.stations.length > 20) {
-    const ttl = saved.partial ? PARTIAL_TTL : CATALOG_TTL;
-    if (Date.now() - saved.at < ttl) return saved;
-  }
-  const built = await buildCatalog(saved);
+// ------------------------------------------------------- cache + background sync
+// The app reuses one plugin VM across calls (mygo-music internal/plugin/plugin.go:
+// p.running() returns p.vm once started), and its event loop stays alive between
+// calls, so a module-level setTimeout survives after home()/stations() return.
+// That makes a delayed, silent directory rebuild possible without blocking UI.
+const BG_REFRESH_DELAY = 20 * 1000;      // complete cache: refresh 20s after first use
+const BG_REFRESH_DELAY_STALE = 5 * 1000; // partial cache: repair sooner
+let bgTimer = null;
+let refreshTask = null;
+let lastBgRefreshAt = 0;
+
+function bgDelayOf(saved) {
+  // Test hook only: lets harness shorten the delay. Production uses the const.
+  let hook;
+  try { hook = globalThis.__cnradioTest; } catch (err) { /* no globalThis */ }
+  if (hook && typeof hook.bgDelay === "number") return hook.bgDelay;
+  return saved && saved.partial ? BG_REFRESH_DELAY_STALE : BG_REFRESH_DELAY;
+}
+
+function scheduleBackgroundRefresh(saved) {
+  if (bgTimer !== null || refreshTask) return;                 // already queued/running
+  if (Date.now() - lastBgRefreshAt < CATALOG_TTL) return;       // at most once per TTL
+  let hook;
+  try { hook = globalThis.__cnradioTest; } catch (err) { /* no globalThis */ }
+  if (hook) hook.bgScheduled = true;                            // observable in tests
+  bgTimer = setTimeout(() => {
+    bgTimer = null;
+    lastBgRefreshAt = Date.now();
+    refreshCatalog().catch((err) => {
+      // Silent by design: never surface a background failure to the listener.
+      console.log("cnradio: background refresh failed: " + err.message);
+    });
+  }, bgDelayOf(saved));
+  // Do not keep a test/CLI process alive just for the timer.
+  if (bgTimer && typeof bgTimer.unref === "function") bgTimer.unref();
+}
+
+function commitBuild(built, saved) {
   if (!built.partial) {
     host.storage.set("catalog", built);
     return built;
@@ -417,6 +448,32 @@ async function catalog(force) {
   }
   host.storage.set("catalog", built); // partial, only trusted for PARTIAL_TTL
   return built;
+}
+
+async function refreshCatalog() {
+  if (refreshTask) return refreshTask; // manual refresh reuses an in-flight build
+  refreshTask = (async () => {
+    const saved = host.storage.get("catalog");
+    const built = await buildCatalog(saved);
+    return commitBuild(built, saved);
+  })();
+  try {
+    return await refreshTask;
+  } finally {
+    refreshTask = null;
+  }
+}
+
+async function catalog(force) {
+  const saved = host.storage.get("catalog");
+  // Cache-first: any usable local directory answers immediately. TTL is only
+  // a hint for scheduling a background refresh, never a reason to block.
+  if (!force && saved && saved.at && saved.stations && saved.stations.length > 20) {
+    scheduleBackgroundRefresh(saved);
+    return saved;
+  }
+  // No usable cache yet: build synchronously (there is nothing else to show).
+  return refreshCatalog();
 }
 
 function idsOf(c, ids, limit) {
