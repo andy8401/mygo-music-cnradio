@@ -1,6 +1,6 @@
 # 在线收音机 — MyGo Music 插件
 
-把 [云听 radio.cn](https://www.radio.cn/pc-portal/erji/radioStation.html) 与 [喜马拉雅电台](https://www.ximalaya.com/radio) 的直播电台接进 [MyGo Music](https://github.com/egoist/mygo-music)：合并后 **1200+ 个电台**（实测 1230，动态增减）、按同分类合并（云听 10 类原样保留 + 新增「其他」，文艺/曲艺/都市→综艺，旅游/方言/外语/综合/体育/其他→其他）、**同名电台以云听为准**、按地区/类型浏览、名称与正在直播节目搜索、云听今日节目回听，直播在播放器中持续播放。喜马拉雅只合并直播电台，不合并其节目回听。
+把 [云听 radio.cn](https://www.radio.cn/pc-portal/erji/radioStation.html) 与 [喜马拉雅电台](https://www.ximalaya.com/radio) 的直播电台接进 [MyGo Music](https://github.com/egoist/mygo-music)：合并后 **1200+ 个电台**（实测 1230，动态增减）、按同分类合并（云听 10 类原样保留 + 新增「其他」，文艺/曲艺/都市→综艺，旅游/方言/外语/综合/体育/其他→其他）、**同名电台以云听为准**、按地区/类型浏览、名称与正在直播节目搜索、云听今日节目回听，直播在播放器中持续播放。喜马拉雅只合并直播电台，不合并其节目回听。目录**缓存在本地、启动零等待读取、后台静默更新**（见 6.1）。
 
 > **仓库**：https://github.com/andy8401/mygo-music-cnradio
 > **一键安装**（桌面端点开会唤起 MyGo Music）：`mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio`
@@ -156,7 +156,7 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 | 文件 | 作用 |
 | --- | --- |
 | `plugin.json` | 清单：权限、设置、侧栏导航、请求头 |
-| `index.js` | 全部插件能力：签名请求、目录缓存、home/browse/search/stations/stationNext/stream |
+| `index.js` | 全部插件能力：签名请求、目录缓存 + 后台静默刷新、home/browse/search/stations/stationNext/stream |
 | `bridge.py` | HLS→ADTS 本地转流桥（Python 3 标准库，`--mode ts` 云听 / `--mode aac` 喜马拉雅） |
 | `locales/zh-CN.json` | 中文翻译 |
 
@@ -212,9 +212,9 @@ MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，
 | 7 | `node --check index.js` / `py_compile bridge.py` / 两个 JSON | 全部通过 |
 | 8 | `harness.mjs` v1.0.0（模拟 MyGo host） | 13 项 ALL PASS，`live.aac` 输出 `fff15080459ffc21` |
 | 9 | `harness.mjs` v1.1.0（18 项，含限流回归） | ALL PASS：937 电台、北京页 5+19、刷新页 33 入口、瞬时/持续 503 回退 |
+| 10 | 高频请求观察 | `listenbackList` 返回 `503 Service Temporarily Unavailable`，证实云端存在限流 |
 | 11 | `harness.mjs` v1.2.0（22 项，含喜马拉雅合并） | ALL PASS：1230 电台（含 251 喜马拉雅）、无重名、11 个分类含「其他」(99 台)、北京页 12+19、云听/喜马拉雅 ADTS、瞬时/持续 503 回退 |
 | 12 | `harness.mjs` v1.3.0（25 项，含本地缓存） | **ALL PASS**：缓存二次读取 `fetch delta=0`、后台定时器已排程、隔离实例实测缓存自动静默更新（`at` 更新、`fetch+104`）；其余 22 项沿用 |
-| 10 | 高频请求观察 | `listenbackList` 返回 `503 Service Temporarily Unavailable`，证实云端存在限流 |
 
 ### 5.1 地区完整性与限流修复（v1.1.0）
 
