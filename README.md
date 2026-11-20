@@ -1,1 +1,249 @@
-IyDlnKjnur/mlLbpn7PmnLog4oCUIE15R28gTXVzaWMg5o+S5Lu2CgrmioogW+S6keWQrCByYWRpby5jbl0oaHR0cHM6Ly93d3cucmFkaW8uY24vcGMtcG9ydGFsL2VyamkvcmFkaW9TdGF0aW9uLmh0bWwpIOS4jiBb5Zac6ams5ouJ6ZuF55S15Y+wXShodHRwczovL3d3dy54aW1hbGF5YS5jb20vcmFkaW8pIOeahOebtOaSreeUteWPsOaOpei/myBbTXlHbyBNdXNpY10oaHR0cHM6Ly9naXRodWIuY29tL2Vnb2lzdC9teWdvLW11c2ljKe+8muWQiOW5tuWQjiAqKjEyMDArIOS4queUteWPsCoq77yI5a6e5rWLIDEyMzDvvIzliqjmgIHlop7lh4/vvInjgIHmjInlkIzliIbnsbvlkIjlubbvvIjkupHlkKwgMTAg57G75Y6f5qC35L+d55WZICsg5paw5aKe44CM5YW25LuW44CN77yM5paH6Im6L+absuiJui/pg73luILihpLnu7zoibrvvIzml4XmuLgv5pa56KiAL+WkluivrS/nu7zlkIgv5L2T6IKyL+WFtuS7luKGkuWFtuS7lu+8ieOAgSoq5ZCM5ZCN55S15Y+w5Lul5LqR5ZCs5Li65YeGKirjgIHmjInlnLDljLov57G75Z6L5rWP6KeI44CB5ZCN56ew5LiO5q2j5Zyo55u05pKt6IqC55uu5pCc57Si44CB5LqR5ZCs5LuK5pel6IqC55uu5Zue5ZCs77yM55u05pKt5Zyo5pKt5pS+5Zmo5Lit5oyB57ut5pKt5pS+44CC5Zac6ams5ouJ6ZuF5Y+q5ZCI5bm255u05pKt55S15Y+w77yM5LiN5ZCI5bm25YW26IqC55uu5Zue5ZCs44CCCgo+ICoq5LuT5bqTKirvvJpodHRwczovL2dpdGh1Yi5jb20vYW5keTg0MDEvbXlnby1tdXNpYy1jbnJhZGlvCj4gKirkuIDplK7lronoo4UqKu+8iOahjOmdouerr+eCueW8gOS8muWUpOi1tyBNeUdvIE11c2lj77yJ77yaYG15Z28tbXVzaWM6Ly9pbnN0YWxsLXBsdWdpbj9yZXBvPWFuZHk4NDAxL215Z28tbXVzaWMtY25yYWRpb2AKPiDku5PlupPlt7LluKYgdG9waWMgYG15Z28tbXVzaWMtcGx1Z2luYO+8jOWPr+iiq1vlrpjmlrnmj5Lku7bnm67lvZVdKGh0dHBzOi8vbXlnby1tdXNpYy5lZ29pc3QuZGV2L3BsdWdpbnMp5pS25b2V44CCCgotLS0KCiMjIOS4gOOAgee9kemhteWIhuaekAoKIyMjIDEuMSDpobXpnaLmgKfotKgKCmByYWRpb1N0YXRpb24uaHRtbGAg5piv5LqR5ZCsIFBDIOmXqOaIt+eahOOAjOeUteWPsOebtOaSreOAjemhteOAgkhUTUwg5Y+q5pyJ6aqo5p6277yI5Zyw5Yy644CB57G75Z6L44CB5pel5pyf44CB6IqC55uu5Y2V5a655Zmo77yJ77yMKirmiYDmnInmlbDmja7nlLEgalF1ZXJ5IOWKqOaAgeaLieWPlioq77yM5qC45b+D5Zyo5LiJ5Liq5paH5Lu26YeM77yaCgp8IOaWh+S7tiB8IOS9nOeUqCB8CnwgLS0tIHwgLS0tIHwKfCBganMvYXBpLmpzPzA2MmAgfCBBUEkg572R5YWz5Zyw5Z2A44CBaGVhZGVy44CBTUQ1IOetvuWQjeOAgTkg5Liq5o6l5Y+j55qE6Lev5b6E6KGo44CB5YWo5bGAIGByZXF1ZXN0KClgIHwKfCBgZXJqaS9yYWRpb1N0YXRpb24uaHRtbGAgfCDpobXpnaLpgLvovpHvvJpgZ2V0UmFkaW9MaXN0YCAvIGBnZXRSYWRpb1Byb3ZpbmNlTGlzdGAgLyBgZ2V0UmFkaW9DYXRlZ29yeUxpc3RgIC8gYGdldExpc3RlbkJhY2tMaXN0YCAvIGBnZXRQcm9ncmFtTGlzdGAgfAp8IGBqcy9oaXJhZGlvLm1pbi5qcz8xMTFgIHwg5pKt5pS+5Zmo77yISExTIOaSreaUvu+8ie+8jOS4juacrOaPkuS7tuaXoOWFsyB8CgrpobXpnaLpu5jorqTlj6rmuLLmn5MgMTkg5Liq5Zu95a625Y+w77yIYGdldFJhZGlvTGlzdCgpYCDml6Dlj4LmlbDvvInjgILlnLDljLov57G75Z6L5YiH5o2i5Y+q5piv5o2i5LiA57uE562b6YCJ5Y+C5pWw6YeN5paw6K+35rGC5ZCM5LiA5Liq5o6l5Y+j44CCCgojIyMgMS4yIOe9keWFs+S4juaOpeWPowoK5Y2V5L2T5pyN5Yqh572R5YWz77yaYGh0dHBzOi8veXRtc291dC5yYWRpby5jbmDvvIhgYXBpLmpzYCDnmoQgYG1zQXBpYO+8m2B1VHlwZT0wYO+8jOaJgOS7peS4jei1sCBgeXRhcGkucmFkaW8uY24veXRzcnYvc3J2YO+8ieOAggoKfCDpobXpnaLlh73mlbAgfCDot6/lvoQgfCDmlrnms5UgfCDlj4LmlbAgfCDov5Tlm54gYGRhdGFgIHwKfCAtLS0gfCAtLS0gfCAtLS0gfCAtLS0gfCAtLS0gfAp8IGBnZXRSYWRpb1Byb3ZpbmNlTGlzdGAgfCBgL3dlYi9hcHBQcm92aW5jZS9saXN0L2FsbGAgfCBHRVQgfCDigJQgfCAzMiDkuKogYHtwcm92aW5jZU5hbWUsIHByb3ZpbmNlQ29kZX1g77yM5ZCr44CM5Zu95a62IDDjgI3kuI7jgIzmlrDnloblhbXlm6IgNjYwMDAw44CNIHwKfCBgZ2V0UmFkaW9DYXRlZ29yeUxpc3RgIHwgYC93ZWIvYXBwQ2F0ZWdvcnkvbGlzdC9hbGxgIHwgR0VUIHwg4oCUIHwgMTAg5LiqIGB7aWQsIGNhdGVnb3J5TmFtZX1g77ya5YWo6YOoL+eDremXqC/mlrDpl7sv6LSi57uPL+eUn+a0uy/kuqTpgJov57u86Im6L+mfs+S5kC/mlYXkuosv5rCR5pePIHwKfCBgZ2V0UmFkaW9MaXN0YCB8IGAvd2ViL2FwcEJyb2FkY2FzdC9saXN0YCB8IEdFVCB8IGBjYXRlZ29yeUlkYCwgYHByb3ZpbmNlQ29kZWAgfCDnlLXlj7DmlbDnu4TvvIwqKuWQq+ebtOaSrea1geWcsOWdgCoqIHwKfCBgZ2V0TGlzdGVuQmFja0xpc3RgIHwgYC93ZWIvYXBwQnJvYWRjYXN0L2xpc3RlbmJhY2tMaXN0YCB8IEdFVCB8IGBwcm92aW5jZUNvZGVgIHwgMTkg5Liq5Y+v5Zue5ZCs6aKR6YGTIGB7aWQsIGJyb2FkY2FzdE5hbWV9YCB8CnwgYGdldFByb2dyYW1MaXN0YCB8IGAvd2ViL2FwcFByb2dyYW0vbGlzdEJ5RGF0ZWAgfCBHRVQgfCBgZGF0ZWAsIGBicm9hZGNhc3RJZGAgfCDoioLnm67mlbDnu4TvvIzlkKsgYC5tNGFgIOWbnuWQrOebtOmTviB8Cgrlk43lupTnu5/kuIDkuLogYHsiY29kZSI6MCwibWVzc2FnZSI6IlNVQ0NFU1MiLCJkYXRhIjpbLi4uXX1g44CCCgojIyMgMS4zIOivt+axguetvuWQje+8iOacrOaPkuS7tuW3suWkjeeOsO+8iQoKYGFwaS5qc2Ag5Lit5Zu65a6a5a+G6ZKlIGBrZXkgPSBmMGZjNGM2NjgzOTJmOWY5YTQ0N2U0ODU4NGMyMTRlZWDjgILmr4/kuKogR0VUIOW4puS4pOS4qiBoZWFkZXLvvJoKCmBgYAp0aW1lc3RhbXAgPSA85q+r56eS5pe26Ze05oizPgpzaWduICAgICAgPSBVUFBFUiggTUQ1KCDlj4LmlbDmjIkga2V5IOWNh+W6j+aLvOaIkCAiaz12Jms9diIgKyAiJnRpbWVzdGFtcD0iICsgdGltZXN0YW1wICsgIiZrZXk9IiArIGtleSApICkKYGBgCgrlm7rlrpogaGVhZGVy77yaYENvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbmDjgIFgZXF1aXBtZW50SWQ6IDAwMDBg44CBYHBsYXRmb3JtQ29kZTogV0VCYO+8iOWPpuWKoCBSZWZlcmVyL1VBIOabtOeos++8ieOAggrml6Dlj4LmlbDml7bnrb7lkI3kuLLlsLHmmK8gYHRpbWVzdGFtcD08bXM+JmtleT085Zu65a6aa2V5PmDjgIIK5pys5o+S5Lu255u05o6l55So5a6Y5pa5IGhvc3QgQVBJIGBob3N0LmNyeXB0by5tZDUoKWDvvIjov5Tlm57lsI/lhpkgaGV477yJ5YaNIGAudG9VcHBlckNhc2UoKWDvvIzkuI3pnIDopoHoh6rlt7Hlrp7njrAgTUQ144CCCgo+IOazqOaEj++8muWNleWPguaVsOivt+axguWcqOWOn+mhtemdouS8muaKiuWAvOi/veWKoOWIsOi3r+W+hOacq+Wwvu+8iGAvd2ViL2FwcEJyb2FkY2FzdC9saXN0ZW5iYWNrTGlzdC9g77yJ77yb5a6e5rWL5LulIHF1ZXJ5IOW9ouW8jyBgP3Byb3ZpbmNlQ29kZT1gIOWQjOagt+i/lOWbniBgY29kZTowYO+8jOacrOaPkuS7tue7n+S4gOeUqCBxdWVyeeOAggoKIyMjIDEuNCDnlLXlj7DmlbDmja7lrZfmrrXkuI7mj5Lku7bmmKDlsIQKCnwg5o6l5Y+j5a2X5q61IHwg5ZCr5LmJIHwg5o+S5Lu255So6YCUIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IDxtYXJrPioqY29udGVudElkKio8L21hcms+IHwg55S15Y+wIElEIHwgYFN0YXRpb24uaWQgPSBsaXZlOjxjb250ZW50SWQ+YO+8jOWbnuWQrOeahCBgYnJvYWRjYXN0SWRgIOWQjOWPtyB8CnwgYHRpdGxlYCB8IOeUteWPsOWQjSB8IGBTdGF0aW9uLm5hbWVgIC8gYFRyYWNrLm5hbWVgIHwKfCBgc3VidGl0bGVgIHwg5q2j5Zyo55u05pKt55qE6IqC55uu5ZCNIHwgYFN0YXRpb24uZGVzY3JpcHRpb25g77yM5pCc57Si5Lmf5Yy56YWN5a6DIHwKfCBgaW1hZ2VgIHwg5Y+w5qCH77yMSFRUUFMgYHl0bWVkaWEucmFkaW8uY25gIHwgYGltYWdlVXJsYCB8CnwgPG1hcms+KipwbGF5VXJsTXVsdGkqKiAvICoqbXAzUGxheVVybEhpZ2gqKjwvbWFyaz4gfCDpq5jnoIHnjocgSExTIGBtM3U4YCB8IOebtOaSremrmOeUu+i0qOa6kCB8CnwgYG1wM1BsYXlVcmxMb3dgIC8gYHBsYXlVcmxMb3dgIHwg5L2O56CB546HIEhMUyBgbTN1OGAgfCDnm7Tmkq3kvY7noIHnjofmupAgfAp8IOKAlCB8IGBwcm92aW5jZUNvZGVgIOS4jeWcqOi/lOWbnuS9k+mHjCB8IOaPkuS7tuWcqOmBjeWOhuecgeS7veaXtuiHquihjOiusOW9le+8jOS+myBgc3RyZWFtKClgIOmHjeaWsOWumuS9jSB8Cgo8bWFyaz4qKuaJgOacieebtOaSrea1gemDveaYryBITFMqKjwvbWFyaz7vvJpgaHR0cDovL3l0Y2FzdDIucmFkaW8uY24vMTEwL3JhZGlvcy80MDYzOS9pbmRleF80MDYzOS5tM3U4P3R5cGU9MSZrZXk9POWKqOaAgeetvuWQjT4mdGltZT085Yqo5oCB5pe26Ze05oizPmDvvIxwbGF5bGlzdCDmjIflkJEgMTAg56eS5LiA5Liq55qEIGAudHNgIOWIhueJh+OAggpga2V5YC9gdGltZWAgKirmr4/mrKHor7fmsYLpg73lj5gqKu+8jOaJgOS7peaPkuS7tuS7juS4jee8k+WtmOa1geWcsOWdgO+8jOavj+asoeaSreaUvumHjeaWsOivt+axguivpeeUteWPsOaJgOWxnuWcsOWMuueahOWIl+ihqOOAggrlm57lkKzliJnmmK8gYGh0dHBzOi8veXRyZWNvcmRicm9hZGNhc3QucmFkaW8uY24vZWNoby8uLi4veHh4Lm00YT8uLi5g77yM5piv5pmu6YCaIGAubTRhYCDmlofku7bvvIzlrp7mtYsgYFJhbmdlYCDor7fmsYLov5Tlm54gYDIwNiAvIGF1ZGlvL3gtbTRhIC8gZnR5cCBNNEFg44CCCgojIyMgMS41IOWunua1i+aVsOaNruinhOaooe+8iDIwMjYtMTEtMTPvvIkKCnwg6aG555uuIHwg57uT5p6cIHwg6I635Y+W5pa55byPIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IOWcsOWMuiB8IDMyIHwgYGFwcFByb3ZpbmNlL2xpc3QvYWxsYCB8Cnwg57G75Z6LIHwgMTAgfCBgYXBwQ2F0ZWdvcnkvbGlzdC9hbGxgIHwKfCDpobXpnaLpu5jorqTnlLXlj7AgfCAxOe+8iOWbveWutuWPsO+8iSB8IGBnZXRSYWRpb0xpc3QoKWAg5peg5Y+CIHwKfCDkupHlkKzlhajph4/ljrvph43nlLXlj7AgfCA5NznvvIjliqjmgIHlop7lh4/vvIkgfCDpgY3ljoYgMzIg5LiqIGBwcm92aW5jZUNvZGVgICsgMTAg5LiqIGBjYXRlZ29yeUlkYCDlkI7mjIkgYGNvbnRlbnRJZGAg5Y676YeNIHwKfCDllpzpqazmi4npm4XnlLXlj7AgLyDlh4DmlrDlop4gfCA1MzAgLyAyNTEgfCDpgY3ljoYgMTUg5Liq5YiG57G75Y676YeN77yM5ZCM5ZCN5Lul5LqR5ZCs5Li65YeGIHwKfCA8bWFyaz4qKuWQiOW5tuWQjuaAu+eUteWPsCoqPC9tYXJrPiB8IDxtYXJrPioqMTIzMCoqPC9tYXJrPiB8IDk3OSArIDI1Me+8iOingSAxLjfvvIkgfAp8IOWPr+WbnuWQrOmikemBkyB8IDE577yI5LuF5LqR5ZCs77yJIHwgYGxpc3RlbmJhY2tMaXN0YCB8Cnwg5Lit5Zu95LmL5aOw5Y2V5pel6IqC55uuIHwgMTPigJMyM++8iOaMieaXpeacn+WPmOWMlu+8iSB8IGBsaXN0QnlEYXRlYCB8CgojIyMgMS42IOWMl+S6rOWcsOWMuuWIsOW6leacieWkmuWwkemikemBkwoKfCDmoLjlrp7mlrnlvI8gfCDnu5PmnpwgfAp8IC0tLSB8IC0tLSB8Cnwg572R6aG144CM5Zyw5Yy6IOKGkiDljJfkuqzjgI3op6blj5HnmoQgYGdldFJhZGlvTGlzdCgwLCAxMTAwMDApYCB8ICoqNSDkuKoqKu+8muWMl+S6rOWfjuW4guW5v+aSreWJr+S4reW/g+S5i+WjsOOAgeWMl+S6rOS6pOmAmuW5v+aSreOAgeWMl+S6rOmfs+S5kOW5v+aSreOAgeWkp+WFtOS6uuawkeW5v+aSreeUteWPsOOAgeWMl+S6rDk2Oee7j+WFuOiwg+mikSB8CnwgMTAg5Liq57G75YirIMOXIGBwcm92aW5jZUNvZGU9MTEwMDAwYCDljrvph40gfCDku43mmK8gNSDkuKrvvIzml6DmlrDlop4gfAp8IOS6keWQrCA5Nzkg5Liq55S15Y+w5Lit5ZCN56ew5ZCr44CM5YyX5Lqs44CNIHwgNCDkuKrvvIjlj6YgMSDkuKrjgIzlpKflhbTkurrmsJHlub/mkq3nlLXlj7DjgI3lnKjljJfkuqzliIbnu4TlhoXvvIkgfAp8IGBwbGFjZV9pZGAgLyBgYXJlYUNvZGVgIC8gYHBhZ2VOdW1gIC8gYHBhZ2VTaXplYCAvIGBsaW1pdGAg562J6ZqQ6JeP5Y+C5pWwIHwg5Z2H5LiN5pS55Y+Y57uT5p6c77yI5pyq55+l5Y+C5pWw6KKr5b+955Wl77yM5Zue6YCA5oiQIDE5IOS4quWbveWutuWPsO+8iSB8Cnwg5peg5aS0IEVkZ2Ug5riy5p+T6aG16Z2iIHwg5Zyw5Yy65YiX6KGoIDMyIOmhue+8jOehruiupOWMl+S6rCBjb2RlID0gYDExMDAwMGAgfAoKKirnu5PorroqKu+8muS6keWQrOe9kemhteeJiOacrOi6q+WvueWMl+S6rOWPquaUtuW9lSA1IOS4quacrOWcsOebtOaSremikemBk++8jOS4jeaYr+aPkuS7tua8j+mHh+OAgnYxLjEuMCDotbfjgIzmjInlnLDljLog4oaSIOWMl+S6rOOAjemineWkluWIhue7hOWIl+WHuiAxOSDkuKrlhajlm73lj7DvvIjlkITlnLDlnYflj6/mlLblkKzvvInjgIJ2MS4yLjAg5ZCI5bm25Zac6ams5ouJ6ZuF5ZCO77yM5YyX5Lqs5Zyw5Yy65pys5Zyw5Y+w5aKe6IezIDEyIOS4qu+8iOS6keWQrCA1ICsg5Y676YeN5ZCO55qE5Zac6ams5ouJ6ZuF5paw5aKe77yJ77yM5Y+m5YqgIDE5IOS4quWFqOWbveWPsOOAggoKIyMjIDEuNyDllpzpqazmi4npm4XmlbDmja7mupDkuI7lkIjlubbop4TliJnvvIh2MS4yLjDvvIkKCuS7jiBb5Zac6ams5ouJ6ZuF55S15Y+w6aG1XShodHRwczovL3d3dy54aW1hbGF5YS5jb20vcmFkaW8pIOmAhuWQkeWHuueahOaOpeWPo++8iOaXoOmcgOetvuWQje+8jGlQaG9uZSBVQSArIFJlZmVyZXIg5Y2z5Y+v77yJ77yaCgp8IOeUqOmAlCB8IOaOpeWPoyB8IOWPguaVsCB8CnwgLS0tIHwgLS0tIHwgLS0tIHwKfCDliIbnsbsv5Zyw5Yy65a2X5YW4IHwgYGh0dHBzOi8vbS54aW1hbGF5YS5jb20vcmFkaW8tZmlyc3QtcGFnZS1hcHAvaG9tZVBhZ2VgIHwg4oCUIHwKfCDnlLXlj7Dnm67lvZUgfCBgaHR0cHM6Ly9tLnhpbWFsYXlhLmNvbS9yYWRpby1maXJzdC1wYWdlLWFwcC9zZWFyY2hgIHwgYGNhdGVnb3J5SWRgLCBgbG9jYXRpb25JZGAsIGBsb2NhdGlvblR5cGVJZD0wYCwgYHBhZ2VOdW1gLCBgcGFnZVNpemVgIHwKfCDnlLXlj7Dor6bmg4Uv5pyA5paw5rWB5Zyw5Z2AIHwgYGh0dHBzOi8vbGl2ZS54aW1hbGF5YS5jb20vbGl2ZS13ZWIvdjEvcmFkaW9gIHwgYHJhZGlvSWRgIHwKCioq5ZCI5bm26KeE5YiZKirvvIjkuKXmoLzmjInpnIDmsYLvvInvvJoKCnwg6aG5IHwg6KeE5YiZIHwKfCAtLS0gfCAtLS0gfAp8IOWQiOW5tuiMg+WbtCB8ICoq5Y+q5ZCI5bm255u05pKt55S15Y+wKirvvIzkuI3lkIjlubbllpzpqazmi4npm4XnmoToioLnm67lm57lkKzvvJvjgIzoioLnm67lm57lkKzjgI3pobXku43lj6rmnInkupHlkKwgMTkg5Liq6aKR6YGTIHwKfCDliIbnsbsgfCDkupHlkKwgMTAg57G75Y6f5qC35L+d55WZ77yb5Zac6ams5ouJ6ZuF5paw6Ze7L+mfs+S5kC/kuqTpgJov57uP5rWOL+eUn+a0u+WPsOW5tuWFpeS6keWQrOWQjOWQjeexu++8m+aWh+iJui/mm7Loibov6YO95biC4oaS57u86Im677yb5peF5ri4L+aWueiogC/lpJbor60v57u85ZCIL+S9k+iCsi/lhbbku5bihpLmlrDlop7jgIzlhbbku5bjgI0gfAp8IOWQjOWQjeWOu+mHjSB8IOWQjeensOW9kuS4gOWMlu+8iOWOu+OAjOW5v+aSrS/nlLXlj7Av6aKR546HL+mikemBky/kuYvlo7DjgI3nrYnlkI7nvIDkuI7moIfngrnvvInlkI7vvIwqKuWQjOWQjeS4gOW+i+eUqOS6keWQrOadoeebrioq77yM5Zac6ams5ouJ6ZuF5Ymv5pys5Lii5byDIHwKfCDlnLDljLogfCDnlKggYHNlYXJjaD9sb2NhdGlvbklkPTzooYzmlL/ljLrliJLnoIE+YCDlu7rnq4vnlLXlj7DihpLnnIHku73lvZLlsZ7vvIzllpzpqazmi4npm4XmlrDlj7Dov5vlhaXlr7nlupTlnLDljLrpobUgfAp8IElEIOmalOemuyB8IOS6keWQrCBgbGl2ZTo8aWQ+YOOAgeWWnOmprOaLiembhSBgeG06PGlkPmDvvIzkupLkuI3lhrLnqoHvvJtgc3RhdGlvbk5leHQoKWAg55Sf5oiQ5ZSv5LiA5a6e5L6LIGlkIOS/neivgeebtOaSree7reaSrSB8Cnwg5rWB5Zyw5Z2AIHwg5q+P5qyh5pKt5pS+6YeN5paw6K+35rGC6K+m5oOF5o6l5Y+j5Y+W5pyA5paw5Zyw5Z2A77yM5LiN57yT5a2Y77yb5Zac6ams5ouJ6ZuFIGBhYWMyNGAvYGFhYzY0YCDliIbniYfmmK/oo7ggQURUUyB8CgoqKuWunua1i+aVsOaNru+8iDIwMjYtMTEtMjDvvIkqKu+8mgoKfCDpobnnm64gfCDnu5PmnpwgfAp8IC0tLSB8IC0tLSB8Cnwg5LqR5ZCs55S15Y+wIHwgOTc577yI5Yqo5oCB5aKe5YeP77yJIHwKfCDllpzpqazmi4npm4XnlLXlj7AgfCA1MzDvvIjpgY3ljoYgMTUg5Liq5YiG57G75Y676YeN77yJIHwKfCDlkIzlkI3ph43lkIjvvIjnlKjkupHlkKzvvIkgfCAyNzkgfAp8IOWWnOmprOaLiembheWHgOaWsOWiniB8IDxtYXJrPioqMjUxKio8L21hcms+IHwKfCDlkIjlubblkI7mgLvmlbAgfCA8bWFyaz4qKjEyMzAqKjwvbWFyaz4gfAp8IOaWsOWinuOAjOWFtuS7luOAjeWIhuexuyB8IDk5IOS4queUteWPsCB8Cnwg5YyX5Lqs5Zyw5Yy65pys5Zyw5Y+wIHwgNe+8iOS6keWQrO+8ieKGkiAxMu+8iOWQiOW5tuWQju+8iSB8CgoqKui9rOa1geW3ruW8gioq77ya5LqR5ZCs55u05pKt5pivIEhMU+KGkk1QRUctVFPvvIjpppblrZfoioIgYDB4NDdg77yJ77yMYnJpZGdlIOmcgOWJpSAxODgg5a2X6IqCIFRTIOWktO+8m+WWnOmprOaLiembhSBgYWFjKmAg5rqQ5YiG54mH5pys6Lqr5bCx5piv6KO4IEFEVFPvvIjpppblrZfoioIgYDB4RkYgRjFg77yM5a6e5rWLIGBmZmYxNWM4MOKApmDvvInvvIxicmlkZ2Ug55SoIGAtLW1vZGUgYWFjYCDnm7TmjqXmi7zmjqXluKfjgIHkuI3liaUgVFMg5aS044CC5Lik5p2h6Lev5b6E5pyA57uI6YO95ZyoIGAxMjcuMC4wLjE6PHBvcnQ+L2xpdmUuYWFjYCDovpPlh7rmkq3mlL7lmajlj6/op6PnoIHnmoQgQURUUyDmtYHjgIIKCi0tLQoKIyMg5LqM44CB5Li65LuA5LmI6ZyA6KaB44CM6L2s5rWB5qGl44CNCgpNeUdvIE11c2ljIOaYr+e6ryBHbyDop6PnoIHvvIzmj5Lku7bnmoQgYHN0cmVhbSgpYCDlj6rog73ov5Tlm54gYHt1cmwsIHR5cGV9YO+8jGB0eXBlYCDku4XmlK/mjIEgYG1wMyAvIGZsYWMgLyBvZ2cgLyB3YXYgLyBtNGEgLyBhYWNg77yI6KeB5a6Y5pa5IGBpbnRlcm5hbC9tdXNpYy9tdXNpYy5nbzoyNDlgIOS4jiBSRUFETUXvvInjgILlhbbkuK0gYGFhY2Ag5oyHICoqQURUUyDluKfmtYEqKu+8mmBpbnRlcm5hbC9wbGF5ZXIvYWR0cy5nb2Ag55qEIGBhZHRzSGVhZGVyKClgIOimgeaxgua1geeahOesrCAwIOWtl+iKguWwseaYryBgRkYgRjEvRjlg77yM5ZCm5YiZ55u05o6l5oqlIGBhYWM6IG5vdCBhbiBBRFRTIHN0cmVhbWDjgIIKCuS6keWQrOebtOaSree7meeahOaYryBgbTN1OGAg4oaSIGAudHNgIOWIhueJh++8iOWIhueJh+mmluWtl+iKgiBgNDcgNDAgLi4uYO+8jE1QRUctVFMg5YyF77yJ77yM5Zug5q2kKirkuI3og73mioogbTN1OCDnm7TmjqXkuqTnu5nmkq3mlL7lmagqKuOAggoK5o+S5Lu255qE6Kej5Yaz5Yqe5rOV77yaYGJyaWRnZS5weWDvvIhQeXRob24gMyDmoIflh4blupPvvIzml6DnrKzkuInmlrnkvp3otZbvvInmi4kgSExTIHBsYXlsaXN077yM5ZyoIGAxMjcuMC4wLjE6PHBvcnQ+L2xpdmUuYWFjYCDkuIrovpPlh7rkuIDmnaEqKuawuOS4jee7k+adnyoq55qEIEFEVFMg5rWB77ybYHN0cmVhbSgpYCDov5Tlm57ov5nkuKrmnKzlnLDlnLDlnYDvvIzmkq3mlL7lmajovrnkuIvovrnmkq3jgILkuKTnp43mqKHlvI/vvJoKCi0gKirkupHlkKwqKu+8iGAtLW1vZGUgdHNg77yJ77ya5YiG54mH5pivIE1QRUctVFPvvIjpppblrZfoioIgYDB4NDdg77yJ77yM5Yml5o6JIDE4OCDlrZfoioIgVFMg5YyF5aS05ZCO5oq95Ye65a6M5pW0IEFEVFMg5bin44CCCi0gKirllpzpqazmi4npm4UqKu+8iGAtLW1vZGUgYWFjYO+8ie+8mmBhYWMqYCDliIbniYfmnKzouqvlsLHmmK/oo7ggQURUU++8iOmmluWtl+iKgiBgMHhGRiBGMWDvvInvvIznm7TmjqXmi7zmjqXluKfjgIHkuI3liaUgVFMg5aS044CCCgrkuZ/mlK/mjIHnlKggZmZtcGVnIOWujOaIkOWQjOagt+eahOi9rOWwgeijhe+8iOWPr+mAie+8ieOAggoKYGBgCueUteWPsOWNoeeJhyDihpIgc3RhdGlvbk5leHQoKSDihpIgc3RyZWFtKCkKICAg4pSc4pSAIOS6keWQrOebtOaSre+8muetvuWQjSBBUEkg4oaSIG0zdTgoVFMpIOKGkiBicmlkZ2UucHkgLS1tb2RlIHRzIOKGkiBodHRwOi8vMTI3LjAuMC4xOlBPUlQvbGl2ZS5hYWMgKGFhYykKICAg4pSc4pSAIOWWnOmprOaLiembheebtOaSre+8muivpuaDhSBBUEkg4oaSIG0zdTgoYWFjKSDihpIgYnJpZGdlLnB5IC0tbW9kZSBhYWMg4oaSIGh0dHA6Ly8xMjcuMC4wLjE6UE9SVC9saXZlLmFhYyAoYWFjKQogICDilJTilIAg5Zue5ZCs77yabGlzdEJ5RGF0ZSDihpIgaHR0cHM6Ly8uLi5tNGEg4oaSIOebtOi/nuaSreaUviAodHlwZTogbTRhLCDml6DpnIDmoaUpCmBgYAoKLS0tCgojIyDkuInjgIHmlofku7bmuIXljZUKCnwg5paH5Lu2IHwg5L2c55SoIHwKfCAtLS0gfCAtLS0gfAp8IGBwbHVnaW4uanNvbmAgfCDmuIXljZXvvJrmnYPpmZDjgIHorr7nva7jgIHkvqfmoI/lr7zoiKrjgIHor7fmsYLlpLQgfAp8IGBpbmRleC5qc2AgfCDlhajpg6jmj5Lku7bog73lipvvvJrnrb7lkI3or7fmsYLjgIHnm67lvZXnvJPlrZjjgIFob21lL2Jyb3dzZS9zZWFyY2gvc3RhdGlvbnMvc3RhdGlvbk5leHQvc3RyZWFtIHwKfCBgYnJpZGdlLnB5YCB8IEhMU+KGkkFEVFMg5pys5Zyw6L2s5rWB5qGl77yIUHl0aG9uIDMg5qCH5YeG5bqT77yMYC0tbW9kZSB0c2Ag5LqR5ZCsIC8gYC0tbW9kZSBhYWNgIOWWnOmprOaLiembhe+8iSB8CnwgYGxvY2FsZXMvemgtQ04uanNvbmAgfCDkuK3mlofnv7vor5EgfAoK5a+85Ye655qE5Ye95pWw77yI5pyq5a+85Ye655qE6IO95YqbIE15R28gTXVzaWMg5Lya6Ieq5Yqo6ZqQ6JeP5a+55bqU55WM6Z2i77yJ77yaCgp8IOWHveaVsCB8IOi/lOWbniB8IOivtOaYjiB8CnwgLS0tIHwgLS0tIHwgLS0tIHwKfCBgc3RhdGlvbnMoKWAgfCBgW1N0YXRpb25dYCB8IDEyMDArIOS4queUteWPsO+8iOWunua1iyAxMjMw77yM5Yqo5oCB5aKe5YeP77yb5LqR5ZCsIDk3OSArIOWWnOmprOaLiembheWHgOWiniAyNTHvvIkgfAp8IGBob21lKClgIHwgYEJyb3dzZWAgfCDlm73lrrblj7DjgIHng63pl6jjgIHlnLDljLov57G75Z6L5YWl5Y+j44CB5Zue5ZCs5YWl5Y+jIHwKfCBgYnJvd3NlKHtwYWdlfSlgIHwgYEJyb3dzZWAgfCBgcmVnaW9uc2AgLyBgY2F0ZWdvcmllc2AgLyBgcmVmcmVzaGAgLyBgcmVnaW9uOjxjb2RlPmAgLyBgY2F0OjxpZD5gIC8gYHJlcGxheWAgLyBgcGxheWJhY2s6PGlkPmAgLyBgYWxsYO+8m+WcsOWMuumhtemineWkluWIhue7hOWIl+WHuiAxOSDkuKrlhajlm73lj7AgfAp8IGBzZWFyY2goe3F1ZXJ5LGtpbmQsb2Zmc2V0fSlgIHwgYHt0cmFja3MsIG1vcmV9YCB8IOWMuemFjeWPsOWQjeOAgeato+WcqOebtOaSreiKguebruOAgeWcsOWMuiB8CnwgYHN1Z2dlc3Qoe3F1ZXJ5fSlgIHwgYFtzdHJpbmddYCB8IOWPsOWQjeWJjee8gOW7uuiuriB8CnwgYHN0YXRpb25OZXh0KHtpZH0pYCB8IGBbVHJhY2tdYCB8IOavj+asoeeUn+aIkOWUr+S4gCB0cmFjayBpZO+8jOa1geaWreS6huiHquWKqOe7reaSrSB8CnwgYHN0cmVhbSh7aWQscXVhbGl0eX0pYCB8IGBTdHJlYW1gIHwg55u05pKt6LWw5qGl77yM5Zue5ZCs6LWwIG00YSB8CnwgYHNldFNldHRpbmcoe2tleSx2YWx1ZX0pYCB8IOKAlCB8IOiuvue9ruWPmOWMluaXtumHjeWQr+ahpSB8CgotLS0KCiMjIOWbm+OAgeWuieijhQoKMS4gKirlh4blpIfov5DooYzml7YqKu+8muWuieijhSBQeXRob24gM++8iOWRveS7pOS4uiBgcHl0aG9uM2AgLyBgcHl0aG9uYCAvIGBweWAg5LmL5LiA77yJKirmiJYqKiBmZm1wZWfvvIzkuJTlj6/lnKggUEFUSCDkuK3osIPnlKjjgIJtYWNPUy9MaW51eCDpgJrluLjoh6rluKYgUHl0aG9uIDPvvJtXaW5kb3dzIOijheWumOaWuSBQeXRob24g5Y2z5Y+v44CCCjIuICoq5a+85YWl5o+S5Lu2KirvvIjku7vpgInlhbbkuIDvvInvvJoKICAgLSAqKkdpdEh1Yu+8iOaOqOiNkO+8iSoq77ya6K6+572uIOKGkiDmj5Lku7Yg4oaSICsg4oaSIOS7jiBHaXRIdWIg5a6J6KOF77yM5aGrIGBhbmR5ODQwMS9teWdvLW11c2ljLWNucmFkaW9g77yb5oiW54K5IFvkuIDplK7lronoo4VdKG15Z28tbXVzaWM6Ly9pbnN0YWxsLXBsdWdpbj9yZXBvPWFuZHk4NDAxL215Z28tbXVzaWMtY25yYWRpbynjgIIKICAgLSAqKuacrOWcsCoq77ya6YCJ5oup5pys5paH5Lu25aS577yM5oiW55SoIGBteWdvLW11c2ljLWNucmFkaW8uemlwYO+8iHppcCDmoLnnm67lvZXljbMgYHBsdWdpbi5qc29uYO+8ieWvvOWFpeOAggozLiAqKuaOiOadgyoq77ya6aaW5qyh5a6J6KOF5Lya5YiX5Ye65p2D6ZmQ77yM6ZyA6KaB5YWB6K64CiAgIC0gYG5ldHdvcmtg77yaYCoucmFkaW8uY25g44CBYCoueGltYWxheWEuY29tYOOAgWAqLnhtY2RuLmNvbWDjgIFgMTI3LjAuMC4xYOOAgWBsb2NhbGhvc3RgCiAgIC0gYHByb2Nlc3Ng77yaYHB5dGhvbjNgIC8gYHB5dGhvbmAgLyBgcHlgIC8gYGZmbXBlZ2DvvIjnlKjkuo7lkK/liqjmnKzlnLDovazmtYHmoaXvvIkKNC4g5L6n5qCP5Ye6546w44CM5LqR5ZCs6aaW6aG1IC8g5YWo6YOo55S15Y+wIC8g5oyJ5Zyw5Yy6IC8g5oyJ57G75Z6LIC8g6IqC55uu5Zue5ZCs44CN77yM54K555S15Y+w5Y2z5pKt44CC44CM5oyJ5Zyw5Yy644CN44CM5oyJ57G75Z6L44CN6aG16aG26YOo5pyJ44CM5Yi35paw6aKR6YGT55uu5b2V44CN77yM5Y+v5by65Yi26YeN5bu655uu5b2V5bm25pi+56S65ouJ5Y+W5aSx6LSl55qE5Zyw5Yy656CB44CC5pu05paw5YiwIHYxLjIuMCDlkI7mj5Lku7bmoIfpopjkuLrjgIzkupHlkKwgKyDllpzpqazmi4npm4XnlLXlj7DjgI3vvIzmjojmnYPliJfooajkvJrmlrDlop7llpzpqazmi4npm4Xln5/lkI3vvIjlsZ7mlrDlop7nvZHnu5zmnYPpmZDvvIzlrqLmiLfnq6/kvJrlho3mrKHor6Lpl67vvInjgIIKCj4gYHByb2Nlc3NgIOadg+mZkOWPquaOpeWPlyoq5ZG95Luk5ZCNKirjgILoi6XkvaDnmoQgUHl0aG9uIOWRveS7pOS4jeWcqOS4iui/sOS4ieS4quWQjeWtl+mHjO+8jOivt+aKiuWPr+aJp+ihjOeoi+W6j+S7pei/meS4ieS4quWQjeWtl+S5i+S4gOaUvuWIsCBQQVRI77yI5LiN6KaB5aGr57ud5a+56Lev5b6E77yM57ud5a+56Lev5b6E5LiN5Zyo5bey5aOw5piO55qE5p2D6ZmQ5YaF77yJ44CCCgojIyMg6K6+572u6aG5Cgp8IGtleSB8IOm7mOiupCB8IOivtOaYjiB8CnwgLS0tIHwgLS0tIHwgLS0tIHwKfCBgYnJpZGdlYCB8IGBhdXRvYCB8IGBhdXRvYO+8iOWFiCBQeXRob24g5qGl5YaNIGZmbXBlZ++8iS8gYHB5dGhvbmAgLyBgZmZtcGVnYCAvIGBkaXJlY3Rg77yI5oqKIG0zdTgg55u05o6l57uZ5pKt5pS+5Zmo77yM5LuF6LCD6K+V77yM5Lya6Kej56CB5aSx6LSl77yJIHwKfCBgcHl0aG9uQ21kYCB8IOepuiB8IOWhqyBgcHl0aG9uM2AgLyBgcHl0aG9uYCAvIGBweWDvvIznlZnnqbrkvp3mrKHlsJ3or5UgfAp8IGBmZm1wZWdDbWRgIHwg56m6IHwg5LiA6Iis5aGrIGBmZm1wZWdgIHwKfCBgcXVhbGl0eWAgfCBgaGlnaGAgfCBgaGlnaGAg55SoIHBsYXlVcmxNdWx0aSAvIG1wM1BsYXlVcmxIaWdo77yMYGxvd2Ag55So5L2O56CB546H5rqQIHwKCi0tLQoKIyMg5LqU44CB6aqM6K+B6K6w5b2V77yI5pys5py65a6e5rWL77yMMjAyNi0xMS0xM++8iQoKfCAjIHwg5qOA5p+lIHwg57uT5p6cIHwKfCAtLS0gfCAtLS0gfCAtLS0gfAp8IDEgfCDkuInkuKrnm67lvZXmjqXlj6PluKbnrb7lkI0gR0VUIHwg5YWo6YOoIGBIVFRQIDIwMCAvIGNvZGU6MGAgfAp8IDIgfCDpgY3ljoYgMzIg5Zyw5Yy6ICsgMTAg57G75Z6LIHwg6aaW6L2u5Y676YeN5ZCOICoqOTIwKiog5Liq55S15Y+w77yb5ZCO57ut5aSN5rWLICoqOTM3KirvvIjnm67lvZXliqjmgIHlop7lh4/vvIzpnZ7lm7rlrprlgLzvvIkgfAp8IDMgfCDlm57lkKwgYG00YWAg55u06ZO+IHwgYEhUVFAgMjA2YO+8jGBhdWRpby94LW00YWDvvIzmlofku7blpLQgYGZ0eXBNNEFgIHwKfCA0IHwgSExTIHBsYXlsaXN0IHwgYEhUVFAgMjAwYO+8jGAjRVhULVgtVEFSR0VURFVSQVRJT046MTBg77yMNSDkuKogYC50c2Ag5YiG54mHIHwKfCA1IHwg5YiG54mH6aaW5a2X6IqCIHwgYDQ3IDQwIDExIDFkIC4uLmDvvIhNUEVHLVRT77yM6Z2eIEFEVFPvvInihpIg6K+B5a6e5b+F6aG76L2s5bCB6KOFIHwKfCA2IHwgYHZlcmlmeV9icmlkZ2UucHlgIHwgYC9oZWFsdGggPSBjbnJhZGlvLWJyaWRnZS1va2DvvJtgL2xpdmUuYWFjYCA2IOenkuaUtiAxMjI4ODAg5a2X6IqC77yM6Kej5p6Q5Ye6ICoqMjE2IOS4quWujOaVtCBBRFRTIOW4pyoq77yMNDQxMDAgSHrvvIxgZmZmMTUwODDigKZgIHwKfCA3IHwgYG5vZGUgLS1jaGVjayBpbmRleC5qc2AgLyBgcHlfY29tcGlsZSBicmlkZ2UucHlgIC8g5Lik5LiqIEpTT04gfCDlhajpg6jpgJrov4cgfAp8IDggfCBgaGFybmVzcy5tanNgIHYxLjAuMO+8iOaooeaLnyBNeUdvIGhvc3TvvIkgfCAxMyDpobkgQUxMIFBBU1PvvIxgbGl2ZS5hYWNgIOi+k+WHuiBgZmZmMTUwODA0NTlmZmMyMWAgfAp8IDkgfCBgaGFybmVzcy5tanNgIHYxLjEuMO+8iDE4IOmhue+8jOWQq+mZkOa1geWbnuW9ku+8iSB8IEFMTCBQQVNT77yaOTM3IOeUteWPsOOAgeWMl+S6rOmhtSA1KzE544CB5Yi35paw6aG1IDMzIOWFpeWPo+OAgeeerOaXti/mjIHnu60gNTAzIOWbnumAgCB8CnwgMTEgfCBgaGFybmVzcy5tanNgIHYxLjIuMO+8iDIyIOmhue+8jOWQq+WWnOmprOaLiembheWQiOW5tu+8iSB8ICoqQUxMIFBBU1MqKu+8mjEyMzAg55S15Y+w77yI5ZCrIDI1MSDllpzpqazmi4npm4XvvInjgIHml6Dph43lkI3jgIExMSDkuKrliIbnsbvlkKvjgIzlhbbku5bjgI0oOTkg5Y+wKeOAgeWMl+S6rOmhtSAxMisxOeOAgeS6keWQrCBBRFRTIGBmZmYxNTA4MOKApmDjgIHllpzpqazmi4npm4UgQURUUyBgZmZmMTVjODDigKZg77yINTY5MjIg5a2X6IqC77yJ44CB556s5pe2L+aMgee7rSA1MDMg5ZCO5LuNIDEyIOS4qiB8CnwgMTAgfCDpq5jpopHor7fmsYLop4Llr58gfCBgbGlzdGVuYmFja0xpc3RgIOi/lOWbniBgNTAzIFNlcnZpY2UgVGVtcG9yYXJpbHkgVW5hdmFpbGFibGVg77yM6K+B5a6e5LqR56uv5a2Y5Zyo6ZmQ5rWBIHwKCiMjIyA1LjEg5Zyw5Yy65a6M5pW05oCn5LiO6ZmQ5rWB5L+u5aSN77yIdjEuMS4w77yJCgotICoq5qC55ZugKirvvJp2MS4wLjAg6aaW5qyh5Yqg6L2955SoIGBQcm9taXNlLmFsbGAg5ZCM5pe25Y+RIDMyIOS4quecgSArIDEwIOS4quexu+WIq+ivt+axgu+8m+S6keerr+mZkOa1geaXtuafkOS4quWcsOWMuui/lOWbniA1MDPvvIzooqsgYGNhdGNoYCDlkJ7miJDnqbrmlbDnu4TvvIzogIzov5nkuKrjgIznvLrkuIDmiKrjgI3nmoTnm67lvZXov5jkvJrooqvnvJPlrZggMzAg5YiG6ZKf44CC6KGo546w5bCx5piv5p+Q5Liq5Zyw5Yy66aKR6YGT5pWw5LiN5a+544CCCi0gKirkv67lpI0qKu+8muavj+aJuSAzIOS4quivt+axguOAgeaJuemXtCAxODBtc++8m+Wksei0peaMiSAzMDBtcyAvIDEyMDBtcyDpgIDpgb/ph43or5UgMiDmrKHvvJvlpLHotKXlnLDljLrku47kuIrmrKHlrozmlbTnm67lvZXlm57loavvvJvkuI3lrozmlbTnm67lvZXlj6rnvJPlrZggNjAg56eS5LiU5LiN6KaG55uW5a6M5pW057yT5a2Y77yb5Yi35paw6aG15YiX5Ye65aSx6LSl5Zyw5Yy656CB44CCCi0gKirmiYvliqjliLfmlrAqKu+8muS+p+agj+OAjOaMieWcsOWMuiDihpIg5Yi35paw6aKR6YGT55uu5b2V44CN77yM5oiW5omT5byAIGBwYWdlOiByZWZyZXNoYOOAggoKLS0tCgojIyDlha3jgIHpmZDliLbkuI7ms6jmhI8KCi0gKirnm7Tmkq3kvp3otZYgUHl0aG9uIDMg5oiWIGZmbXBlZyoq77ya5Zue5ZCs77yIbTRh77yJ5LiN6ZyA6KaB5Lu75L2V5aSW6YOo56iL5bqP77yM5byA566x5Y2z5pKt44CC5rKh6KOF6L+Q6KGM5pe25pe254K555u05pKt5Lya5o+Q56S6IGBzZXR1cGDvvIzor7flnKjorr7nva7ph4zphY3nva7jgIIKLSDnm7Tmkq3lu7bov5/nuqYgMTDigJMyMCDnp5LvvIhITFMg5YiG54mHICsg5qGl55qE6IqC5rWB77yJ77yM5bGe5q2j5bi4546w6LGh44CCCi0g5rWB5Zyw5Z2A55qEIGBrZXkvdGltZWAg5pyJ5pe25pWI77yM5o+S5Lu25q+P5qyh5pKt5pS+6YO96YeN5paw562+5ZCN5Y+W5paw5Zyw5Z2A77yb5YiH5Y+w5Lya6YeN5ZCv5qGl77yM5ZCM5LiA55S15Y+w5aSN55So5qGl44CCCi0gYGRpcmVjdGAg5qih5byP5LuF55So5LqO56Gu6K6kIEhMUyDkuI7mkq3mlL7lmajnmoTkuI3lhbzlrrnvvIzmraPluLjmlLblkKzkuI3opoHnlKjjgIIKLSDmj5Lku7blj6ror7fmsYLlhazlvIDnmoTnm67lvZUv5rWB5o6l5Y+j77yMKirlrozmlbTnm67lvZXnvJPlrZggMzAg5YiG6ZKf77yM5Zug6ZmQ5rWB6ICM5q6L57y655qE55uu5b2V5Y+q57yT5a2YIDYwIOenkioq5LiU5Zyo5LiL5qyh5oiQ5Yqf5ouJ5Y+W5YmN5LiN6KaG55uW5a6M5pW057yT5a2Y77yb6K+35LuF5L2c5Liq5Lq65a2m5Lmg5LiO6Ieq55So77yM6YG15a6I56uZ54K55pyN5Yqh5p2h5qy+77yM5LiN6KaB6auY6aKR6L2u6K+i5oiW5YiG5Y+R5rWB5Zyw5Z2A44CCCgotLS0KCiMjIOS4g+OAgeWPkeW4g+S4juabtOaWsAoKLSDku5PlupPvvJpgaHR0cHM6Ly9naXRodWIuY29tL2FuZHk4NDAxL215Z28tbXVzaWMtY25yYWRpb2DvvIxgcGx1Z2luLmpzb25gIOS9jeS6juS7k+W6k+agueebruW9le+8jE15R28gTXVzaWMg5Y+v55u05o6l5a6J6KOF44CCCi0g5rKh5pyJIFJlbGVhc2Ug5pe277yM5a6i5oi356uv5Y+W6buY6K6k5YiG5pSv5pyA5paw5LiA5qyh5o+Q5Lqk77yb5omTIHRhZyDmiJbmjqjpgIHmlrDmj5DkuqTljbPop4bkuLrmlrDniYjmnKzvvIjmlrDlop7mnYPpmZDkvJrlho3mrKHor6Lpl67nlKjmiLfvvInjgIIKLSDku5PlupPlt7Lorr7nva4gdG9waWMgYG15Z28tbXVzaWMtcGx1Z2luYO+8iOWPpuaciSBgbXlnby1tdXNpY2AgLyBgcmFkaW9gIC8gYGludGVybmV0LXJhZGlvYCAvIGBjbnJhZGlvYO+8ie+8jOWPr+iiq1vlrpjmlrnmj5Lku7bnm67lvZVdKGh0dHBzOi8vbXlnby1tdXNpYy5lZ29pc3QuZGV2L3BsdWdpbnMp5pS25b2V44CCCi0g5o+S5Lu254mI5pys5Y+35YaZ5ZyoIGBwbHVnaW4uanNvbmAg55qEIGB2ZXJzaW9uYO+8jOW9k+WJjSAqKmAxLjIuMGAqKuOAggoKIyMjIDcuMSDniYjmnKzorrDlvZUKCnwg54mI5pysIHwg5YaF5a65IHwKfCAtLS0gfCAtLS0gfAp8IGAxLjAuMGAgfCDpppbmrKHlj5HluIPvvJrnrb7lkI3mjqXlj6PlpI3njrDjgIE5MzArIOeUteWPsOebruW9leOAgeaMieWcsOWMui/nsbvlnovmtY/op4jjgIHmkJzntKLjgIHoioLnm67lm57lkKzjgIFITFPihpJBRFRTIOacrOWcsOi9rOa1geahpeOAgiB8CnwgYDEuMS4wYCB8IOS/ruWkjeS6keerr+mZkOa1geWvvOiHtOeahCoq5Zyw5Yy66aKR6YGT57y65aSxKirvvJrliIbmibnor7fmsYIgKyDph43or5XpgIDpgb/jgIHlpLHotKXlnLDljLrku47kuIrmrKHlrozmlbTnm67lvZXlm57loavjgIHmrovnvLrnm67lvZXnn60gVFRM77yb5paw5aKe44CM5Yi35paw6aKR6YGT55uu5b2V44CN6aG177yb5Zyw5Yy66aG16aKd5aSW5YiG57uE5YiX5Ye6IDE5IOS4quWFqOWbveWPsOOAgiB8CnwgYDEuMi4wYCB8ICoq5ZCI5bm25Zac6ams5ouJ6ZuF55S15Y+wKirvvJrlkIzlkI3ku6XkupHlkKzkuLrlh4bvvIzkupHlkKwgMTAg57G75Y6f5qC35L+d55WZICsg5paw5aKe44CM5YW25LuW44CN77yb5Y+q5ZCI5bm255u05pKt55S15Y+w77yI5Zue5ZCs5LuN5LuF5LqR5ZCs77yJ77ybSUQg5YqgIGB4bTpgIOWJjee8gOmalOemu++8m2BicmlkZ2UucHlgIOWinuWKoCBgLS1tb2RlIGFhY2Ag55u05ou86KO4IEFEVFPvvJvmgLvph48gOTMwKyDihpIgMTIzMCvjgIIgfAo=
+# 在线收音机 — MyGo Music 插件
+
+把 [云听 radio.cn](https://www.radio.cn/pc-portal/erji/radioStation.html) 与 [喜马拉雅电台](https://www.ximalaya.com/radio) 的直播电台接进 [MyGo Music](https://github.com/egoist/mygo-music)：合并后 **1200+ 个电台**（实测 1230，动态增减）、按同分类合并（云听 10 类原样保留 + 新增「其他」，文艺/曲艺/都市→综艺，旅游/方言/外语/综合/体育/其他→其他）、**同名电台以云听为准**、按地区/类型浏览、名称与正在直播节目搜索、云听今日节目回听，直播在播放器中持续播放。喜马拉雅只合并直播电台，不合并其节目回听。
+
+> **仓库**：https://github.com/andy8401/mygo-music-cnradio
+> **一键安装**（桌面端点开会唤起 MyGo Music）：`mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio`
+> 仓库已带 topic `mygo-music-plugin`，可被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录。
+
+---
+
+## 一、网页分析
+
+### 1.1 页面性质
+
+`radioStation.html` 是云听 PC 门户的「电台直播」页。HTML 只有骨架（地区、类型、日期、节目单容器），**所有数据由 jQuery 动态拉取**，核心在三个文件里：
+
+| 文件 | 作用 |
+| --- | --- |
+| `js/api.js?062` | API 网关地址、header、MD5 签名、9 个接口的路径表、全局 `request()` |
+| `erji/radioStation.html` | 页面逻辑：`getRadioList` / `getRadioProvinceList` / `getRadioCategoryList` / `getListenBackList` / `getProgramList` |
+| `js/hiradio.min.js?111` | 播放器（HLS 播放），与本插件无关 |
+
+页面默认只渲染 19 个国家台（`getRadioList()` 无参数）。地区/类型切换只是换一组筛选参数重新请求同一个接口。
+
+### 1.2 网关与接口
+
+单体服务网关：`https://ytmsout.radio.cn`（`api.js` 的 `msApi`；`uType=0`，所以不走 `ytapi.radio.cn/ytsrv/srv`）。
+
+| 页面函数 | 路径 | 方法 | 参数 | 返回 `data` |
+| --- | --- | --- | --- | --- |
+| `getRadioProvinceList` | `/web/appProvince/list/all` | GET | — | 32 个 `{provinceName, provinceCode}`，含「国家 0」与「新疆兵团 660000」 |
+| `getRadioCategoryList` | `/web/appCategory/list/all` | GET | — | 10 个 `{id, categoryName}`：全部/热门/新闻/财经/生活/交通/综艺/音乐/故事/民族 |
+| `getRadioList` | `/web/appBroadcast/list` | GET | `categoryId`, `provinceCode` | 电台数组，**含直播流地址** |
+| `getListenBackList` | `/web/appBroadcast/listenbackList` | GET | `provinceCode` | 19 个可回听频道 `{id, broadcastName}` |
+| `getProgramList` | `/web/appProgram/listByDate` | GET | `date`, `broadcastId` | 节目数组，含 `.m4a` 回听直链 |
+
+响应统一为 `{"code":0,"message":"SUCCESS","data":[...]}`。
+
+### 1.3 请求签名（本插件已复现）
+
+`api.js` 中固定密钥 `key = f0fc4c668392f9f9a447e48584c214ee`。每个 GET 带两个 header：
+
+```
+timestamp = <毫秒时间戳>
+sign      = UPPER( MD5( 参数按 key 升序拼成 "k=v&k=v" + "&timestamp=" + timestamp + "&key=" + key ) )
+```
+
+固定 header：`Content-Type: application/json`、`equipmentId: 0000`、`platformCode: WEB`（另加 Referer/UA 更稳）。
+无参数时签名串就是 `timestamp=<ms>&key=<固定key>`。
+本插件直接用官方 host API `host.crypto.md5()`（返回小写 hex）再 `.toUpperCase()`，不需要自己实现 MD5。
+
+> 注意：单参数请求在原页面会把值追加到路径末尾（`/web/appBroadcast/listenbackList/`）；实测以 query 形式 `?provinceCode=` 同样返回 `code:0`，本插件统一用 query。
+
+### 1.4 电台数据字段与插件映射
+
+| 接口字段 | 含义 | 插件用途 |
+| --- | --- | --- |
+| <mark>**contentId**</mark> | 电台 ID | `Station.id = live:<contentId>`，回听的 `broadcastId` 同号 |
+| `title` | 电台名 | `Station.name` / `Track.name` |
+| `subtitle` | 正在直播的节目名 | `Station.description`，搜索也匹配它 |
+| `image` | 台标，HTTPS `ytmedia.radio.cn` | `imageUrl` |
+| <mark>**playUrlMulti** / **mp3PlayUrlHigh**</mark> | 高码率 HLS `m3u8` | 直播高画质源 |
+| `mp3PlayUrlLow` / `playUrlLow` | 低码率 HLS `m3u8` | 直播低码率源 |
+| — | `provinceCode` 不在返回体里 | 插件在遍历省份时自行记录，供 `stream()` 重新定位 |
+
+<mark>**所有直播流都是 HLS**</mark>：`http://ytcast2.radio.cn/110/radios/40639/index_40639.m3u8?type=1&key=<动态签名>&time=<动态时间戳>`，playlist 指向 10 秒一个的 `.ts` 分片。
+`key`/`time` **每次请求都变**，所以插件从不缓存流地址，每次播放重新请求该电台所属地区的列表。
+回听则是 `https://ytrecordbroadcast.radio.cn/echo/.../xxx.m4a?...`，是普通 `.m4a` 文件，实测 `Range` 请求返回 `206 / audio/x-m4a / ftyp M4A`。
+
+### 1.5 实测数据规模（2026-11-13）
+
+| 项目 | 结果 | 获取方式 |
+| --- | --- | --- |
+| 地区 | 32 | `appProvince/list/all` |
+| 类型 | 10 | `appCategory/list/all` |
+| 页面默认电台 | 19（国家台） | `getRadioList()` 无参 |
+| 云听全量去重电台 | 979（动态增减） | 遍历 32 个 `provinceCode` + 10 个 `categoryId` 后按 `contentId` 去重 |
+| 喜马拉雅电台 / 净新增 | 530 / 251 | 遍历 15 个分类去重，同名以云听为准 |
+| <mark>**合并后总电台**</mark> | <mark>**1230**</mark> | 979 + 251（见 1.7） |
+| 可回听频道 | 19（仅云听） | `listenbackList` |
+| 中国之声单日节目 | 13–23（按日期变化） | `listByDate` |
+
+### 1.6 北京地区到底有多少频道
+
+| 核实方式 | 结果 |
+| --- | --- |
+| 网页「地区 → 北京」触发的 `getRadioList(0, 110000)` | **5 个**：北京城市广播副中心之声、北京交通广播、北京音乐广播、大兴人民广播电台、北京969经典调频 |
+| 10 个类别 × `provinceCode=110000` 去重 | 仍是 5 个，无新增 |
+| 云听 979 个电台中名称含「北京」 | 4 个（另 1 个「大兴人民广播电台」在北京分组内） |
+| `place_id` / `areaCode` / `pageNum` / `pageSize` / `limit` 等隐藏参数 | 均不改变结果（未知参数被忽略，回退成 19 个国家台） |
+| 无头 Edge 渲染页面 | 地区列表 32 项，确认北京 code = `110000` |
+
+**结论**：云听网页版本身对北京只收录 5 个本地直播频道，不是插件漏采。v1.1.0 起「按地区 → 北京」额外分组列出 19 个全国台（各地均可收听）。v1.2.0 合并喜马拉雅后，北京地区本地台增至 12 个（云听 5 + 去重后的喜马拉雅新增），另加 19 个全国台。
+
+### 1.7 喜马拉雅数据源与合并规则（v1.2.0）
+
+从 [喜马拉雅电台页](https://www.ximalaya.com/radio) 逆向出的接口（无需签名，iPhone UA + Referer 即可）：
+
+| 用途 | 接口 | 参数 |
+| --- | --- | --- |
+| 分类/地区字典 | `https://m.ximalaya.com/radio-first-page-app/homePage` | — |
+| 电台目录 | `https://m.ximalaya.com/radio-first-page-app/search` | `categoryId`, `locationId`, `locationTypeId=0`, `pageNum`, `pageSize` |
+| 电台详情/最新流地址 | `https://live.ximalaya.com/live-web/v1/radio` | `radioId` |
+
+**合并规则**（严格按需求）：
+
+| 项 | 规则 |
+| --- | --- |
+| 合并范围 | **只合并直播电台**，不合并喜马拉雅的节目回听；「节目回听」页仍只有云听 19 个频道 |
+| 分类 | 云听 10 类原样保留；喜马拉雅新闻/音乐/交通/经济/生活台并入云听同名类；文艺/曲艺/都市→综艺；旅游/方言/外语/综合/体育/其他→新增「其他」 |
+| 同名去重 | 名称归一化（去「广播/电台/频率/频道/之声」等后缀与标点）后，**同名一律用云听条目**，喜马拉雅副本丢弃 |
+| 地区 | 用 `search?locationId=<行政区划码>` 建立电台→省份归属，喜马拉雅新台进入对应地区页 |
+| ID 隔离 | 云听 `live:<id>`、喜马拉雅 `xm:<id>`，互不冲突；`stationNext()` 生成唯一实例 id 保证直播续播 |
+| 流地址 | 每次播放重新请求详情接口取最新地址，不缓存；喜马拉雅 `aac24`/`aac64` 分片是裸 ADTS |
+
+**实测数据（2026-11-20）**：
+
+| 项目 | 结果 |
+| --- | --- |
+| 云听电台 | 979（动态增减） |
+| 喜马拉雅电台 | 530（遍历 15 个分类去重） |
+| 同名重合（用云听） | 279 |
+| 喜马拉雅净新增 | <mark>**251**</mark> |
+| 合并后总数 | <mark>**1230**</mark> |
+| 新增「其他」分类 | 99 个电台 |
+| 北京地区本地台 | 5（云听）→ 12（合并后） |
+
+**转流差异**：云听直播是 HLS→MPEG-TS（首字节 `0x47`），bridge 需剥 188 字节 TS 头；喜马拉雅 `aac*` 源分片本身就是裸 ADTS（首字节 `0xFF F1`，实测 `fff15c80…`），bridge 用 `--mode aac` 直接拼接帧、不剥 TS 头。两条路径最终都在 `127.0.0.1:<port>/live.aac` 输出播放器可解码的 ADTS 流。
+
+---
+
+## 二、为什么需要「转流桥」
+
+MyGo Music 是纯 Go 解码，插件的 `stream()` 只能返回 `{url, type}`，`type` 仅支持 `mp3 / flac / ogg / wav / m4a / aac`（见官方 `internal/music/music.go:249` 与 README）。其中 `aac` 指 **ADTS 帧流**：`internal/player/adts.go` 的 `adtsHeader()` 要求流的第 0 字节就是 `FF F1/F9`，否则直接报 `aac: not an ADTS stream`。
+
+云听直播给的是 `m3u8` → `.ts` 分片（分片首字节 `47 40 ...`，MPEG-TS 包），因此**不能把 m3u8 直接交给播放器**。
+
+插件的解决办法：`bridge.py`（Python 3 标准库，无第三方依赖）拉 HLS playlist，在 `127.0.0.1:<port>/live.aac` 上输出一条**永不结束**的 ADTS 流；`stream()` 返回这个本地地址，播放器边下边播。两种模式：
+
+- **云听**（`--mode ts`）：分片是 MPEG-TS（首字节 `0x47`），剥掉 188 字节 TS 包头后抽出完整 ADTS 帧。
+- **喜马拉雅**（`--mode aac`）：`aac*` 分片本身就是裸 ADTS（首字节 `0xFF F1`），直接拼接帧、不剥 TS 头。
+
+也支持用 ffmpeg 完成同样的转封装（可选）。
+
+```
+电台卡片 → stationNext() → stream()
+   ├─ 云听直播：签名 API → m3u8(TS) → bridge.py --mode ts → http://127.0.0.1:PORT/live.aac (aac)
+   ├─ 喜马拉雅直播：详情 API → m3u8(aac) → bridge.py --mode aac → http://127.0.0.1:PORT/live.aac (aac)
+   └─ 回听：listByDate → https://...m4a → 直连播放 (type: m4a, 无需桥)
+```
+
+---
+
+## 三、文件清单
+
+| 文件 | 作用 |
+| --- | --- |
+| `plugin.json` | 清单：权限、设置、侧栏导航、请求头 |
+| `index.js` | 全部插件能力：签名请求、目录缓存、home/browse/search/stations/stationNext/stream |
+| `bridge.py` | HLS→ADTS 本地转流桥（Python 3 标准库，`--mode ts` 云听 / `--mode aac` 喜马拉雅） |
+| `locales/zh-CN.json` | 中文翻译 |
+
+导出的函数（未导出的能力 MyGo Music 会自动隐藏对应界面）：
+
+| 函数 | 返回 | 说明 |
+| --- | --- | --- |
+| `stations()` | `[Station]` | 1200+ 个电台（实测 1230，动态增减；云听 979 + 喜马拉雅净增 251） |
+| `home()` | `Browse` | 国家台、热门、地区/类型入口、回听入口 |
+| `browse({page})` | `Browse` | `regions` / `categories` / `refresh` / `region:<code>` / `cat:<id>` / `replay` / `playback:<id>` / `all`；地区页额外分组列出 19 个全国台 |
+| `search({query,kind,offset})` | `{tracks, more}` | 匹配台名、正在直播节目、地区 |
+| `suggest({query})` | `[string]` | 台名前缀建议 |
+| `stationNext({id})` | `[Track]` | 每次生成唯一 track id，流断了自动续播 |
+| `stream({id,quality})` | `Stream` | 直播走桥，回听走 m4a |
+| `setSetting({key,value})` | — | 设置变化时重启桥 |
+
+---
+
+## 四、安装
+
+1. **准备运行时**：安装 Python 3（命令为 `python3` / `python` / `py` 之一）**或** ffmpeg，且可在 PATH 中调用。macOS/Linux 通常自带 Python 3；Windows 装官方 Python 即可。
+2. **导入插件**（任选其一）：
+   - **GitHub（推荐）**：设置 → 插件 → + → 从 GitHub 安装，填 `andy8401/mygo-music-cnradio`；或点 [一键安装](mygo-music://install-plugin?repo=andy8401/mygo-music-cnradio)。
+   - **本地**：选择本文件夹，或用 `mygo-music-cnradio.zip`（zip 根目录即 `plugin.json`）导入。
+3. **授权**：首次安装会列出权限，需要允许
+   - `network`：`*.radio.cn`、`*.ximalaya.com`、`*.xmcdn.com`、`127.0.0.1`、`localhost`
+   - `process`：`python3` / `python` / `py` / `ffmpeg`（用于启动本地转流桥）
+4. 侧栏出现「云听首页 / 全部电台 / 按地区 / 按类型 / 节目回听」，点电台即播。「按地区」「按类型」页顶部有「刷新频道目录」，可强制重建目录并显示拉取失败的地区码。更新到 v1.2.0 后插件标题为「云听 + 喜马拉雅电台」，授权列表会新增喜马拉雅域名（属新增网络权限，客户端会再次询问）。
+
+> `process` 权限只接受**命令名**。若你的 Python 命令不在上述三个名字里，请把可执行程序以这三个名字之一放到 PATH（不要填绝对路径，绝对路径不在已声明的权限内）。
+
+### 设置项
+
+| key | 默认 | 说明 |
+| --- | --- | --- |
+| `bridge` | `auto` | `auto`（先 Python 桥再 ffmpeg）/ `python` / `ffmpeg` / `direct`（把 m3u8 直接给播放器，仅调试，会解码失败） |
+| `pythonCmd` | 空 | 填 `python3` / `python` / `py`，留空依次尝试 |
+| `ffmpegCmd` | 空 | 一般填 `ffmpeg` |
+| `quality` | `high` | `high` 用 playUrlMulti / mp3PlayUrlHigh，`low` 用低码率源 |
+
+---
+
+## 五、验证记录（本机实测，2026-11-13）
+
+| # | 检查 | 结果 |
+| --- | --- | --- |
+| 1 | 三个目录接口带签名 GET | 全部 `HTTP 200 / code:0` |
+| 2 | 遍历 32 地区 + 10 类型 | 首轮去重后 **920** 个电台；后续复测 **937**（目录动态增减，非固定值） |
+| 3 | 回听 `m4a` 直链 | `HTTP 206`，`audio/x-m4a`，文件头 `ftypM4A` |
+| 4 | HLS playlist | `HTTP 200`，`#EXT-X-TARGETDURATION:10`，5 个 `.ts` 分片 |
+| 5 | 分片首字节 | `47 40 11 1d ...`（MPEG-TS，非 ADTS）→ 证实必须转封装 |
+| 6 | `verify_bridge.py` | `/health = cnradio-bridge-ok`；`/live.aac` 6 秒收 122880 字节，解析出 **216 个完整 ADTS 帧**，44100 Hz，`fff15080…` |
+| 7 | `node --check index.js` / `py_compile bridge.py` / 两个 JSON | 全部通过 |
+| 8 | `harness.mjs` v1.0.0（模拟 MyGo host） | 13 项 ALL PASS，`live.aac` 输出 `fff15080459ffc21` |
+| 9 | `harness.mjs` v1.1.0（18 项，含限流回归） | ALL PASS：937 电台、北京页 5+19、刷新页 33 入口、瞬时/持续 503 回退 |
+| 11 | `harness.mjs` v1.2.0（22 项，含喜马拉雅合并） | **ALL PASS**：1230 电台（含 251 喜马拉雅）、无重名、11 个分类含「其他」(99 台)、北京页 12+19、云听 ADTS `fff15080…`、喜马拉雅 ADTS `fff15c80…`（56922 字节）、瞬时/持续 503 后仍 12 个 |
+| 10 | 高频请求观察 | `listenbackList` 返回 `503 Service Temporarily Unavailable`，证实云端存在限流 |
+
+### 5.1 地区完整性与限流修复（v1.1.0）
+
+- **根因**：v1.0.0 首次加载用 `Promise.all` 同时发 32 个省 + 10 个类别请求；云端限流时某个地区返回 503，被 `catch` 吞成空数组，而这个「缺一截」的目录还会被缓存 30 分钟。表现就是某个地区频道数不对。
+- **修复**：每批 3 个请求、批间 180ms；失败按 300ms / 1200ms 退避重试 2 次；失败地区从上次完整目录回填；不完整目录只缓存 60 秒且不覆盖完整缓存；刷新页列出失败地区码。
+- **手动刷新**：侧栏「按地区 → 刷新频道目录」，或打开 `page: refresh`。
+
+---
+
+## 六、限制与注意
+
+- **直播依赖 Python 3 或 ffmpeg**：回听（m4a）不需要任何外部程序，开箱即播。没装运行时时点直播会提示 `setup`，请在设置里配置。
+- 直播延迟约 10–20 秒（HLS 分片 + 桥的节流），属正常现象。
+- 流地址的 `key/time` 有时效，插件每次播放都重新签名取新地址；切台会重启桥，同一电台复用桥。
+- `direct` 模式仅用于确认 HLS 与播放器的不兼容，正常收听不要用。
+- 插件只请求公开的目录/流接口，**完整目录缓存 30 分钟，因限流而残缺的目录只缓存 60 秒**且在下次成功拉取前不覆盖完整缓存；请仅作个人学习与自用，遵守站点服务条款，不要高频轮询或分发流地址。
+
+---
+
+## 七、发布与更新
+
+- 仓库：`https://github.com/andy8401/mygo-music-cnradio`，`plugin.json` 位于仓库根目录，MyGo Music 可直接安装。
+- 没有 Release 时，客户端取默认分支最新一次提交；打 tag 或推送新提交即视为新版本（新增权限会再次询问用户）。
+- 仓库已设置 topic `mygo-music-plugin`（另有 `mygo-music` / `radio` / `internet-radio` / `cnradio`），可被[官方插件目录](https://mygo-music.egoist.dev/plugins)收录。
+- 插件版本号写在 `plugin.json` 的 `version`，当前 **`1.2.0`**。
+
+### 7.1 版本记录
+
+| 版本 | 内容 |
+| --- | --- |
+| `1.0.0` | 首次发布：签名接口复现、930+ 电台目录、按地区/类型浏览、搜索、节目回听、HLS→ADTS 本地转流桥。 |
+| `1.1.0` | 修复云端限流导致的**地区频道缺失**：分批请求 + 重试退避、失败地区从上次完整目录回填、残缺目录短 TTL；新增「刷新频道目录」页；地区页额外分组列出 19 个全国台。 |
+| `1.2.0` | **合并喜马拉雅电台**：同名以云听为准，云听 10 类原样保留 + 新增「其他」；只合并直播电台（回听仍仅云听）；ID 加 `xm:` 前缀隔离；`bridge.py` 增加 `--mode aac` 直拼裸 ADTS；总量 930+ → 1230+。 |
